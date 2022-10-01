@@ -11,7 +11,7 @@ tags:
 
 Did you know there is a multiple attribute for HTML input fields?
 
-If you ever worked with a file upload, you might know why you want this, but it even works on email fields!
+If you have ever worked with a file upload, you might know why you want this, but it even works on email fields!
 
 Today I will show you how it works and why you can benefit from it.
 
@@ -44,45 +44,45 @@ This will allow us actually to select multiple files in the file picker.
 
 ![HTML Input file multiple](https://cdn.hashnode.com/res/hashnode/image/upload/v1611554716453/x01O6tMv7.png)
 
-However, if you want to receive them on a backend you need also to adjust the name to reflect an array.
+However, if you want to receive them on a backend, you must adjust the name to reflect an array.
 
 ```html
 <input type="file" name="files[]" multiple />
 ```
 
-This will ensure our backend will receive them in an array way instead of just the first selected file.
+This will ensure our backend will receive them in an array rather than just the first selected file.
 
 In `PHP`, for instance, we would get the following.
 
 ```php
 ['files'] = [
  [
-	 "name" => [
-		 "24-01-2021.jpg",
-		 "25-01-2021.jpg"
-	 ],
-	 "type" => [
-		 "image/jpeg",
-		 "image/jpeg"
-	 ],
-	 "tmp_name" => [
-		 "/private/var/random_path",
-		 "/private/var/random_path",
-	 ]
-	 "size" => [
-		 255650,
-		 326338,
-	 ]
+     "name" => [
+         "24-01-2021.jpg",
+         "25-01-2021.jpg"
+     ],
+     "type" => [
+         "image/jpeg",
+         "image/jpeg"
+     ],
+     "tmp_name" => [
+         "/private/var/random_path",
+         "/private/var/random_path",
+     ]
+     "size" => [
+         255650,
+         326338,
+     ]
  ]
 ]
 ```
 
-This will of course, differ for each backend language that you are using.
+This will, of course, differ for each backend language you use.
 At least you know it will arrive as an array of values.
 
 ## Making an HTML email input accept multiple email addresses
 
-Another great use-case for the multiple attribute is the email type.
+Another great use case for the multiple attribute is the email type.
 
 By default, this type can check for emails on a form, but did you know we can enable it to accept multiple emails?
 
@@ -110,11 +110,11 @@ Now let's try adding the multiple attribute, but type the email wrong.
 
 As you can see above, it now accepts the second email but states it's wrong.
 
-We can even make a mistake in the first email, and it will pick up on that.
+We can even make a mistake in the first email, which will pick up on.
 
 ![HTML Multiple email missing @](https://cdn.hashnode.com/res/hashnode/image/upload/v1611556036172/aub0G7bjs.png)
 
-> Note: Seeing this all works, we can of course, also leverage the JavaScript validation engine in the same way!
+> Note: Seeing this all works, we can leverage the JavaScript validation engine similarly!
 
 ## Browser Support
 

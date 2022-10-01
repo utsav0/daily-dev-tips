@@ -9,15 +9,15 @@ tags:
   - tailwind
 ---
 
-In this tutorial we will learn **how to build a scrollable vertical slider using Tailwind CSS** and Eleventy. It will also come with a nice CSS _scroll-snap_ effect.
+In this tutorial, we will learn **how to build a scrollable vertical slider using Tailwind CSS** and Eleventy. It will also come with a nice CSS _scroll-snap_ effect.
 
-This example will become the homepage for my lifestyle blog. The end result of todays article will look like this:
+This example will become the homepage for my lifestyle blog. The result of today's article will look like this:
 
 ![Tailwind full-page homepage scroll sections](https://cdn.hashnode.com/res/hashnode/image/upload/v1611646193043/RIOddbcKp.gif)
 
 ## Build a vertical slider in Tailwind CSS
 
-We will start by coding our main container and the full screen sections inside.
+We will start by coding our main container and the entire screen sections inside.
 
 We have a total of five slider sections for the homepage:
 
@@ -33,16 +33,16 @@ We have a total of five slider sections for the homepage:
 
 This code gives us the following result:
 
-![Tailwind full screen slider](https://cdn.hashnode.com/res/hashnode/image/upload/v1611641079716/6ObvYevmM.gif)
+![Tailwind full-screen slider](https://cdn.hashnode.com/res/hashnode/image/upload/v1611641079716/6ObvYevmM.gif)
 
-As you can see, each vertical slider section is the exact width/height of our viewport.
+As you can see, each vertical slider section is our viewport's exact width/height.
 Even if we resize it, the slider will stay fullscreen.
 
-But we can only scroll to each section. How can we make the sections _snap_ during scrolling?
+But we can only scroll to each section. How can we make the branches _snap_ during scrolling?
 
 ## Tailwind Slider with Scroll-snap
 
-There is a very cool CSS property called **scroll-snap**. It can help us create this "scroll-snapping" behaviour on the slider without any custom JavaScript.
+There is a very cool CSS property called **scroll-snap**. It can help us create this "scroll-snapping" behavior on the slider without custom JavaScript.
 
 However, Tailwind CSS is missing the scroll-snap feature. So let's start by extending the tailwind utilities.
 
@@ -75,32 +75,32 @@ Now let's add these classes to our HTML elements, starting with the `<main>` ele
 <main class="max-h-screen overflow-y-scroll snap snap-y snap-mandatory"></main>
 ```
 
-First, we'll make sure the element has a max-height of the screen and the overflow vertical is set to scroll.
+First, we'll ensure the element has a max height on the screen and the overflow vertical is set to scroll.
 Then we add our recently created snap classes which will render to the following:
 
 ```css
 scroll-snap-type: y mandatory;
 ```
 
-Perfect, now we just need to tell our slider sections where they have to snap to.
+Now we just need to tell our slider sections where they have to snap.
 
 ```html
 <section class="w-full h-screen bg-red-200 snap-start"></section>
 ```
 
-You see, we added the `snap-start` class to each section, and this will now render to behave as you can see in the GIF below.
+We added the `snap-start` class to each section, which will now render to behave as you can see in the GIF below.
 
 ![Tailwind slider with scroll snapping](https://cdn.hashnode.com/res/hashnode/image/upload/v1611642046686/VhpdCo0Ez.gif)
 
-Pretty cool right!
+Pretty cool, right?
 
 ## Vertical slider final styling
 
-Each of our slides will have it's own unique styling, the first section is a full-screen background image with the logo centered in the middle of it.
+Each of our slides will have its unique styling. The first section is a full-screen background image with the logo in the middle.
 
 I've placed the images directly in the `src/images` folder.
 
-First of all we need to add a custom **background image** in our `tailwind.config.js` file. It will allow us to easily use the background image as a class.
+First, we need to add a custom **background image** in our `tailwind.config.js` file. It will allow us to use the background image as a class easily.
 
 ```js
 module.exports = {
@@ -131,7 +131,7 @@ The HTML for this section will look like this:
 
 ```html
 <section
-  class="flex items-center justify-center w-full h-screen  bg-center bg-cover snap-start bg-home-1"
+  class="flex items-center justify-center w-full h-screen bg-center bg-cover snap-start bg-home-1"
 >
   <img alt="The todoist logo" title="The Todoist Logo" src="images/logo.png" />
 </section>
@@ -148,7 +148,9 @@ We will use [Tailwind CSS Grid](https://daily-dev-tips.com/posts/creating-a-news
 ```html
 <section class="flex items-center justify-center w-full h-screen snap-start">
   <div class="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
-    <div class="z-10 flex flex-col justify-center col-span-3 col-start-2 row-start-1">
+    <div
+      class="z-10 flex flex-col justify-center col-span-3 col-start-2 row-start-1"
+    >
       <h1 class="font-black text-purple">About The Todoist</h1>
       <h3 class="text-pink">Coffee, Adrenaline, and a bunch off craziness</h3>
     </div>
@@ -160,19 +162,19 @@ We will use [Tailwind CSS Grid](https://daily-dev-tips.com/posts/creating-a-news
 </section>
 ```
 
-In this section I use the same start-row and start-col hack to overlap the elements.
+I use the same start-row and start-col hack in this section to overlap the elements.
 
-I then use [CSS Flex](https://daily-dev-tips.com/posts/css-flexbox-most-easy-center-vertical-and-horizontal/) to align the elements in the right position.
+I then use [CSS Flex](https://daily-dev-tips.com/posts/css-flexbox-most-easy-center-vertical-and-horizontal/) to align the elements in the correct position.
 
 The result for this section:
 
 ![Section two styling](https://cdn.hashnode.com/res/hashnode/image/upload/v1611643996904/efw-MmxxG.png)
 
-> As you can see it's an offset element, this is how it was designed, you could center it adjusting the col-start position.
+> As you can see, it's an offset element. This is how it was designed. You could center it by adjusting the col-start position.
 
-As for the third section it's a big section that showcases the featured post.
+The third section it's an extensive section that showcases the featured post.
 
-For this example we will hardcode the article, in a later stage we will connect it to our data store.
+For this example, we will hardcode the article, and in a later stage, we will connect it to our data store.
 
 ```html
 <section
@@ -180,30 +182,34 @@ For this example we will hardcode the article, in a later stage we will connect 
 >
   <div class="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
     <div class="col-span-5 col-start-2">
-      <img src="https://thetodoist.com/img/blog/forgotten-punctuation/overview.jpg" />
+      <img
+        src="https://thetodoist.com/img/blog/forgotten-punctuation/overview.jpg"
+      />
     </div>
     <div class="flex flex-col justify-center col-span-3 col-start-8">
       <h2 class="font-black">Lorem ipsum dolor sit amet</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed diam, sed diam.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing, sed diam, sed diam.
+      </p>
       <a href="#" class="mt-2 text-xs underline">Read more &rarr;</a>
     </div>
   </div>
 </section>
 ```
 
-This is again a section where I used mainly CSS Grid to create the elements next to each other, and flex to align them.
+This is again a section where I used mainly CSS Grid to create the elements next to each other and flex to align them.
 
 The result for this section:
 
 ![Tailwind CSS Section styling](https://cdn.hashnode.com/res/hashnode/image/upload/v1611644836640/hsl2UtoVM.png)
 
-The fourth section is very similar to the previous one, it showcases a blog item, however focussing on the background image like in section one.
+The fourth section is very similar to the previous one. It showcases a blog item, however, focussing on the background image, like in section one.
 
-Since this data will be populated from the actual blog item we need to use a inlined background-image.
+Since this data will be populated from the actual blog item, we need to use an inlined background-image.
 
-We can then use a div that has a narrow width for the text area.
+We can then use a div with a narrow text area width.
 
-The whole HTML for this section will look like this:
+The full HTML for this section will look like this:
 
 ```html
 <section
@@ -213,21 +219,25 @@ The whole HTML for this section will look like this:
   <div class="w-1/12">&nbsp;</div>
   <div class="w-3/12">
     <div class="relative">
-      <span class="absolute flex w-full h-0.5 -ml-4 bg-purple -left-full top-1/2"></span
+      <span
+        class="absolute flex w-full h-0.5 -ml-4 bg-purple -left-full top-1/2"
+      ></span
       >Health
     </div>
     <a href="#">
       <h2>Lorem ipsum dolor sit amet</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed diam, sed diam.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing, sed diam, sed diam.
+      </p>
     </a>
     <a href="#" class="mt-2 text-xs underline">Read more &rarr;</a>
   </div>
 </section>
 ```
 
-And this will give us the following end result:
+And this will give us the following result:
 
-![Full screen slider section in Tailwind CSS](https://cdn.hashnode.com/res/hashnode/image/upload/v1611645479919/Menj524h3.png)
+![Full-screen slider section in Tailwind CSS](https://cdn.hashnode.com/res/hashnode/image/upload/v1611645479919/Menj524h3.png)
 
 The last slide is the contact section.
 I will change the design a little bit, so we don't have the form anymore.
@@ -238,8 +248,8 @@ Let's first add this pattern to our tailwind.config file.
 
 ```js
 backgroundImage: {
-	"home-1": "url('images/home-intro.jpg')",
-	"pattern-striped": "url('images/pattern-striped.png')",
+  "home-1": "url('images/home-intro.jpg')",
+  "pattern-striped": "url('images/pattern-striped.png')",
 },
 ```
 
@@ -249,14 +259,14 @@ Now we can use this on our slide:
 <section class="w-full h-screen bg-pattern-striped snap-start"></section>
 ```
 
-The rest of the block uses grid and flex to align the items again.
+The rest of the block uses a grid and flex to align the items.
 
 ```html
 <section class="flex items-center justify-center w-full h-screen bg-pattern-striped snap-start">
   <div class="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
     <div class="col-span-10 col-start-2">
     <h2 class="font-black">Coffee? Sure let's do it.</h2>
-    <strong class="flex w-1/2">Always up for meeting new people, learning stuff, trying new things, so please give me a shout out if you want to be in touch.</strong>
+    <strong class="flex w-1/2">Always up for meeting new people, learning stuff, and trying new things, so please give me a shout-out if you want to be in touch.</strong>
 
     <div class="flex mt-8">
       <div class="w-1/2">
@@ -276,7 +286,7 @@ This will render in the following result.
 
 ![slide with contact section](https://cdn.hashnode.com/res/hashnode/image/upload/v1611646060342/8hQgMx-d2.png)
 
-There we go, we now have our full vertical scrollable homepage slider made in Tailwind and Eleventy.
+There we go. We now have our full vertical scrollable homepage slider in Tailwind and Eleventy.
 
 You can find today's code example on [GitHub](https://github.com/rebelchris/eleventy-todoist/tree/part9).
 
