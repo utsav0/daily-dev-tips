@@ -15,7 +15,7 @@ One of these things one would expect to be existing in CSS for a long time, but 
 
 There are [some hacks](https://css-tricks.com/aspect-ratio-boxes/) to achieve it.
 
-But not a proper aspect-ratio solution, until now that is!
+But not a proper aspect-ratio solution, until now, that is!
 
 Chrome just got support for the `aspect-ratio` property.
 
@@ -31,7 +31,7 @@ The syntax for the `aspect-ratio` is pretty simple.
 aspect-ratio: width / height;
 ```
 
-Alternatively you have some CSS basics like:
+Alternatively, you have some CSS basics like:
 
 ```css
 aspect-ratio: inherit;
@@ -39,13 +39,13 @@ aspect-ratio: initial;
 aspect-ratio: unset;
 ```
 
-To test it out, let's make a resizable box to test out how it will work.
+To test it out, let's make a resizable box to test how it works.
 
 ```html
 <div class="container"></div>
 ```
 
-Inside of the container, we will place two boxes that will have their own aspect ratio's
+Inside the container, we will place two boxes that will have their own aspect ratios
 
 Box 1 will have an aspect ratio of 1/1
 And Box 2 will have a 16/9 aspect ratio.
@@ -96,11 +96,11 @@ For our first box, we will use a square aspect ratio. We can achieve this by usi
 }
 ```
 
-This will provide us a square box that can grow in size.
+This will provide us with a square box that can grow in size.
 
 ### CSS rectangle aspect-ratio 16/9
 
-The second box will have a 16/9 aspect-ratio, which we can achieve by the following CSS.
+The second box will have a 16/9 aspect ratio, which we can achieve by the following CSS.
 
 ```css
 .box2 {
@@ -110,9 +110,9 @@ The second box will have a 16/9 aspect-ratio, which we can achieve by the follow
 }
 ```
 
-Now we get the following result as you can test out in this Codepen.
+Now we get the following result which you can test out in this Codepen.
 
-> Note: Browser support is not big, so you might not see it behave as expected. I've added the GIF, in the beginning to showcase how it works.
+> Note: Browser support is not big, so you might not see it behave as expected. In the beginning, I added the GIF to showcase how it works.
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="rebelchris" data-slug-hash="JjRgaQx" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Aspect Ratio it's finally here">
   <span>See the Pen <a href="https://codepen.io/rebelchris/pen/JjRgaQx">
@@ -123,7 +123,7 @@ Now we get the following result as you can test out in this Codepen.
 
 ## Browser Support
 
-It's still very early days for the `aspect-ratio` browser-support. Chrome shipped it in production in version 88, and Firefox has it in beta, so you can enable it in Firefox.
+It's still very early days for the `aspect-ratio` browser support. Chrome shipped it in production in version 88, and Firefox has it in beta so that you can enable it in Firefox.
 
 ![CSS aspect-ratio browser support](https://caniuse.bitsofco.de/static/v1/mdn-css__properties__aspect-ratio-1611725701664.png)
 

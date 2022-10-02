@@ -9,23 +9,23 @@ tags:
   - eleventy
 ---
 
-In this article, we will be exploring an option to create a two-column layout in Eleventy.
+This article will explore an option to create a two-column layout in Eleventy.
 
-This is quite the challenge since markdown doesn't allow us to have any styling in it.
+This is quite the challenge since markdown doesn't allow us to have any styling.
 
-If you look at my design, you can clearly see the images are on one side and the other side's content.
+Looking at my design, you can see the images are on one side and the other side's content.
 
-![Two column layout design file](https://cdn.hashnode.com/res/hashnode/image/upload/v1611326715665/4TLmEjiB8.png)
+![Two-column layout design file](https://cdn.hashnode.com/res/hashnode/image/upload/v1611326715665/4TLmEjiB8.png)
 
-For this use-case, I will be using a custom JavaScript method that will parse images based on the markdown file's file name.
+I will use a custom JavaScript method to parse images based on the markdown file's name for this case.
 
 ## Create our image repository
 
 As mentioned, we will be hosting our images in a separate file structure.
 
-Start off by creating a folder called `images` inside the `src` folder.
+Start by creating an' images' folder inside the `src` folder.
 
-Inside this folder, you need to create a subfolder with your post file's exact same name.
+You need to create a subfolder inside this folder with your post file's exact name.
 
 In our example, the post is called `article-6.md`, so we will create a subfolder called `article-6`.
 
@@ -35,7 +35,7 @@ Once we have this, we can add all the image folders we need.
 
 We then need to tell Eleventy to pass this folder to our output website.
 
-Open up the `.eleventy.js` file and add the following line in your export.
+Open the `.eleventy.js` file and add the following line to your export.
 
 ```js
 module.exports = function (config) {
@@ -57,7 +57,7 @@ Eleventy has a cool feature where it can read data from the `_data` folder.
 
 So let's create this `_data` folder inside the `src` directory.
 
-Inside their create a file called `postImages.js`.
+Inside there create a file called `postImages.js`.
 
 This file will be a function, reading our file system and finding our images, and adding them to an object to use them.
 
@@ -83,14 +83,14 @@ const walkSync = (dir, filelist) => {
 module.exports = walkSync(process.env.PWD + '/src/images/');
 ```
 
-Here, we created a function called `walkSync`. This will read a specific directory, do some magic and return a filelist object.
+Here, we created a function called `walkSync`. This will read a specific directory, do some magic, and return a filelist object.
 
-Then we export it so it will return the `filelist` as our variable.
+Then we export it to return the `filelist` as our variable.
 
 In this `walkSync` function, we need to loop over our directory and find subdirectories.
 
 ```js
-files.forEach(function(file) {
+files.forEach(function (file) {
   if (fs.statSync(dir + file).isDirectory()) {
     filelist = walkSync(dir + file + '/', filelist);
   } else {
@@ -118,7 +118,7 @@ if (['.JPG', '.JPEG', '.PNG'].includes(ext)) {
 }
 ```
 
-We start by defining the imageUrl with the full dir.
+We start by defining the imageUrl with the entire dir.
 Then we get the extension for this file.
 
 In the next step, we check if the file has an extension of `.JPG`, `.JPEG`, `.PNG`.
@@ -127,7 +127,7 @@ If that is the case, we can safely say it's an image, and we should add it to ou
 
 We then replace our local path using the [string.replace method](https://daily-dev-tips.com/posts/string-replace-in-vanilla-js/).
 
-Which gives us a result that looks like this:
+This gives us a result that looks like this:
 
 ```js
 // article-6/1.jpg
@@ -135,7 +135,7 @@ Which gives us a result that looks like this:
 // article-6/3.jpg
 ```
 
-We now want to explode these string on the slash, so we get the post name and all the images for it.
+We now want to explode these strings on the slash to get the post name and all the images.
 
 ```js
 const fullPath = usePath.split('/');
@@ -166,7 +166,7 @@ This gives us the following output.
 { 'article-6': [ '1.jpg', '2.jpg', '3.jpg' ] }
 ```
 
-So now out `postImages` variable contains this object.
+So now our `postImages` variable contains this object.
 
 ## Link the images to our post
 
@@ -184,9 +184,9 @@ Modify the `src/_includes/layouts/post.njk` file and add the following code:
 {% endfor %}
 ```
 
-We access the postImages object and passing the page.fileSlug (article-6).
+We access the postImages object and pass the page.fileSlug (article-6).
 
-That returns the array of images for this article, we can then return an image object for each image result.
+That returns the array of images for this article. We can then return an image object for each image result.
 
 ## Two-column post layout in Eleventy
 
@@ -198,7 +198,10 @@ Since we converted to Tailwind, here is my version of the two-column layout usin
   <div class="w-full p-4 py-24 md:w-1/2">
     <h1 class="mb-8 text-4xl font-bold">{{ title }}</h1>
     {% for image in postImages[page.fileSlug] %}
-    <img src="/images/{{page.fileSlug}}/{{ image }}" class="w-full mb-6 shadow-xs" />
+    <img
+      src="/images/{{page.fileSlug}}/{{ image }}"
+      class="w-full mb-6 shadow-xs"
+    />
     {% endfor %}
   </div>
   <div class="w-full min-h-screen p-4 py-24 text-white md:w-1/2 bg-purple">
@@ -214,7 +217,7 @@ We then use `flex-col-reverse` to switch these on mobile, so the content is on t
 
 ![Two column layout in Eleventy markdown](https://cdn.hashnode.com/res/hashnode/image/upload/v1611328727903/AnOQTNQjl.png)
 
-There you go, we just created a two-column layout using Eleventy and markdown files.
+There you go. We just created a two-column layout using Eleventy and markdown files.
 
 Pretty cool solution. I'm you can even think of other ways to use this method.
 
