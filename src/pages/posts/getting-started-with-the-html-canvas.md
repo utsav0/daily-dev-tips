@@ -11,9 +11,9 @@ tags:
 ---
 
 My confession: I've never used canvas before this article.
-I just have a cool idea in my head, which needs Canvas, so why not document my explorations using the `HTML` canvas element.
+I have a fantastic idea in my head, which needs Canvas, so why not document my explorations using the `HTML` canvas element?
 
-`<canvas>` is an `HTML` element which can be used to draw graphics via `JavaScript`.
+`<canvas>` is an `HTML` element used to draw graphics via `JavaScript`.
 
 It can do quite a lot of cool things, including;
 
@@ -36,19 +36,19 @@ To create our first canvas, we don't need to do much:
 <canvas id="canvas"></canvas>
 ```
 
-This will create a default canvas element, which is 300x150 pixels. We can set the width and height on a canvas element, or style it via `CSS`.
+This will create a default canvas element, which is 300x150 pixels. We can set the width and height on a canvas element or style it via `CSS`.
 
-It doesn't look like much, since we haven't rendered anything on it.
+It doesn't look like much since we haven't rendered anything on it.
 
 ## Creating our first shape on the HTML Canvas
 
-To add our first shape we need to use JavaScript to first get our canvas element.
+We need to use JavaScript to get our canvas element to add our first shape.
 
 ```js
 const canvas = document.getElementById('canvas');
 ```
 
-Now we have our actual canvas element, we need to specify it's context:
+Now we have our basic canvas element. We need to specify its context:
 
 ```js
 const ctx = canvas.getContext('2d');
@@ -62,7 +62,7 @@ Ok, let's add a square, maybe?
 ctx.fillRect(50, 50, 100, 100);
 ```
 
-The parameters we are sending are as follows (x, y, width, height).
+We are sending the parameters (x, y, width, height).
 
 Cool, so now we see our first rectangle!
 
@@ -106,7 +106,7 @@ ctx.lineTo(100, 25);
 ctx.fill();
 ```
 
-As for the move argument is accepts the (x, y) coordinates.
+As for the move, the argument accepts the (x, y) coordinates.
 And the lineTo (x, y) from where ever the moveTo is set.
 
 ### Canvas Heart
@@ -135,7 +135,7 @@ Find these on the following Codepen.
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-> Note: We will continue exploring in other articles!
+> Note: We will continue exploring other articles!
 
 ## Browser Support
 

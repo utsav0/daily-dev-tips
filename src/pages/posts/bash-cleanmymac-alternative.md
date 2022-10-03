@@ -10,11 +10,11 @@ tags:
   - cli
 ---
 
-As you might know by now, I really like Bash!
+As you might know by now, I like Bash!
 
 So far, we have built some fun stuff using Bash like [hacking our morning routine](https://daily-dev-tips.com/posts/ive-automated-my-morning-routine/) and making an [after work git check](https://daily-dev-tips.com/posts/bash-never-forget-to-git-commit-again/).
 
-For a lot of my articles I use [Carbon](https://carbon.now.sh/) to generate these cool previews.
+I use [Carbon](https://carbon.now.sh/) to generate these cool previews for many of my articles.
 Very cool app, but my Downloads folder gets full of these things.
 
 So how can Bash help us CleanOurMacs?
@@ -25,7 +25,7 @@ So how can Bash help us CleanOurMacs?
 
 > Note: This script can be very dangerous since it uses Bash to remove files. Please be cautious!
 
-We will be using a `txt` file to loop over files we want to remove.
+We will use a `txt` file to loop over files we want to remove.
 
 These files can include a wildcard (\*) or start with a specific string:
 
@@ -41,9 +41,9 @@ done < ~/www/cleanMyPc/files.txt
 echo 'All done';
 ```
 
-Wow, simple as that right!
+Wow, simple as that, right?
 
-We loop through the lines in our `files.txt`, and for each line we execute the `find` command it searches for a specific name and calls `-exec rm -rf`
+We loop through the lines in our `files.txt`, and for each line, we execute the `find` command. It searches for a specific name and calls `-exec rm -rf`
 
 The `rm` stands for `remove` and `rf` for `recursive force`.
 
@@ -56,7 +56,7 @@ This script initially worked so it would scan all your files, but I adjusted it 
 3. Execute command `~/path/to/script/bash.sh`
 4. Voila, all done
 
-It's a very simple script, but it can be useful to find/remove certain files on your computer.
+It's a straightforward script, but it can be helpful to find/remove specific files on your computer.
 
 Find this project on [GitHub](https://github.com/rebelchris/cleanMyPc)
 

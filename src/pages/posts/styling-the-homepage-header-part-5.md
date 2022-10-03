@@ -124,7 +124,7 @@ We'll have to add this effect on the wrapping span element.
 
 ```html
 <span
-  className="m-5 inline-block before:w-full before:aspect-square before:block before:absolute before:-left-1.5 before:top-1.5 before:bg-red-400 relative before:block before:absolute before:bg-red-400 relative z-0 before:rounded-full"
+  className="m-5 inline-block before:w-full before:aspect-square before:-left-1.5 before:top-1.5 before:block before:absolute before:bg-red-400 relative z-0 before:rounded-full"
 ></span>
 ```
 
