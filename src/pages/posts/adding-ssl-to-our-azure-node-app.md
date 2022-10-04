@@ -87,7 +87,7 @@ Go to your App Service in Azure and click the "Custom Domains" option.
 
 ![Azure Custom domain section](https://cdn.hashnode.com/res/hashnode/image/upload/v1600931131521/eF5xCOzLX.png)
 
-If you do not already have a custom domain, view this article on [adding an Azure custom domain](<(https://daily-dev-tips.com/posts/adding-a-custom-domain-to-azure-app-service/)>).
+If you do not already have a custom domain, view this article on [adding an Azure custom domain](https://daily-dev-tips.com/posts/adding-a-custom-domain-to-azure-app-service/).
 
 We can then click on the "Add Binding" option. A side-draw will open up.
 

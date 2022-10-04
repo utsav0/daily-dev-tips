@@ -9,19 +9,19 @@ tags:
   - developer
 ---
 
-The other day Carl made a useful [comment](https://daily-dev-tips.com/posts/our-first-ionic-app/#heading-2-comments-on-this-page):
+The other day Carl made a helpful [comment](https://daily-dev-tips.com/posts/our-first-ionic-app/#heading-2-comments-on-this-page):
 
-> Terminals and command lines scare me. Do you have any dev tips on getting started with these or know any good resources?
+> Terminals and command lines scare me. Do you have any dev tips on getting these or know any good resources?
 
-And it made me realize I also was scared to use the Terminal at one point. It is one of these things wherein the beginning. You just don't know what's happening.
+And it made me realize I also was scared to use the Terminal at one point. It is one of these things wherein the beginning. You don't know what's happening.
 
-So let's walk through some basic commands today, which will make us more comfortable using the Terminal.
+So let's walk through some basic commands today which will make us more comfortable using the Terminal.
 
 ## Which Terminal to Use?
 
-Perhaps a good starting point is which Terminal to use. To be honest, it's much of a preferred choice than actually making a difference. But I use [iTerm2](https://www.iterm2.com/), which works beautifully!
+Perhaps a good starting point is which Terminal to use. Honestly, it's much of a preferred choice than making a difference. But I use [iTerm2](https://www.iterm2.com/), which works beautifully!
 
-If you rather stick to another choice or the default Terminal, be my guest. It won't make a difference in what we are going to do today.
+If you rather stick to another choice or the default Terminal, be my guest. It won't make a difference in what we will do today.
 
 ## Basic Terminal Commands
 
@@ -45,7 +45,7 @@ cd ..
 cd ../../
 ```
 
-We can always go back to the starting point by using `cd` without arguments.
+We can always go back to the starting point using `cd` without arguments.
 
 ```bash
 cd
@@ -53,7 +53,7 @@ cd
 
 ### Bash Where are We?
 
-You forget where you are now and then, and you want to know the current folder.
+You forget where you are now and then and want to know the current folder.
 
 You can use the `pwd` command `Print Working Directory.`
 
@@ -63,7 +63,7 @@ pwd // Return something like: /Users/chrisbongers/Desktop
 
 ### Bash List
 
-Another handy command is `ls`; it means `list` and can be used to show folders inside the directory we are in.
+Another handy command is `ls`; it means `list` and can be used to show folders inside our directory.
 
 ```bash
 ls // Show current directory
@@ -83,7 +83,7 @@ mkdir NewApp
 
 ### Bash Removing
 
-Be careful when using remove commands. The Terminal is strong and can remove system files, so use these with care.
+Be careful when using remove commands. The Terminal can remove system files, so use these with care.
 
 We can use `rmdir` `Remove Directory` to remove a folder.
 
@@ -105,7 +105,7 @@ rm -r NewApp
 
 ### Bash Copy
 
-We can also copy folders and files with the Terminal by using the `cp` `Copy` command.
+We can also copy folders and files with the Terminal using the `cp` `Copy` command.
 
 ```bash
 cp testfile.txt test2.csv
@@ -132,7 +132,7 @@ As you can see, we can even move and rename.
 ### Bash Creating Files
 
 Perhaps the most interesting one is the ability to create files.
-There are multiple ways of creating files, the most common is `touch`, but my personal favorite is `nano`.
+There are multiple ways of creating files, the most common is `touch`, but my favorite is `nano`.
 
 Nano works great because it's generic. It can create but also edit a file at the same time.
 
@@ -144,7 +144,7 @@ Once you open a file in `nano` you can type whatever you want, and once you are 
 
 ## Resume
 
-I hope these Terminal commands were helpful, and I challenge you to have a play around with these.
+I hope these Terminal commands were helpful, and I challenge you to play with them.
 
 Let me know in the comments if there are any really good ones I might have missed.
 

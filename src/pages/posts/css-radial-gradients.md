@@ -9,7 +9,7 @@ tags:
   - css
 ---
 
-Yesterday we had a look at [CSS Linear Gradiants](https://daily-dev-tips.com/posts/css-linear-gradients/).
+Yesterday we looked at [CSS Linear Gradiants](https://daily-dev-tips.com/posts/css-linear-gradients/).
 And as promised, today we'll look into **radial gradients**. These gradients show from a round perspective.
 
 ## Types of CSS Gradients
@@ -35,7 +35,7 @@ In the most basic example, we can use it like this:
 }
 ```
 
-This will make a gradient from red (inside) colors to a yellow (outside) color spectrum.
+This will shift from red (inside) colors to the yellow (outside) color spectrum.
 
 ### Radial Gradient with Multiple Colors
 
@@ -103,7 +103,7 @@ And for who knows what reason, we can **repeat** the gradient as well with this 
 
 ## Browser Support
 
-CSS Gradients are very well supported. Just Opera Mini is not working, and not all browsers support the full set of options.
+CSS Gradients are very well supported. Just Opera Mini is not working, and not all browsers support the complete set of options.
 
 ![CSS Gradients support](https://caniuse.bitsofco.de/static/v1/css-gradients-1593449325882.png)
 
