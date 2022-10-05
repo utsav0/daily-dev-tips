@@ -9,7 +9,7 @@ tags:
   - javascript
 ---
 
-Have you ever had the scenario where you needed to call a function based on a variable?
+Have you ever had a scenario where you needed to call a function based on a variable?
 
 In my most recent use case, I had an area of dynamic modules and needed to loop over them. Then, if I found one with the right values, I needed to **call the function dynamically**.
 
@@ -35,7 +35,7 @@ function customUppercase(input) {
 
 Not very exciting functions, but good enough to test with.
 
-For this example we are going to use the following `HTML`:
+For this example, we are going to use the following `HTML`:
 
 ```html
 <input type="text" data-module="customUppercase" /> <br /><br />
@@ -58,7 +58,7 @@ for (let i = 0; i < options.length; i++) {
 }
 ```
 
-Within the **modules** we need to get all types that have the data-module we are passing:
+Within the **modules**, we need to get all types that have the data-module we are passing:
 
 ```js
 for (let i = 0; i < options.length; i++) {

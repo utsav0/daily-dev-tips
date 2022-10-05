@@ -11,13 +11,13 @@ setup: |
   import StaticTweet from '../../components/StaticTweet.astro'
 ---
 
-The other day [Josh](https://twitter.com/JoshWComeau) made a super cool tweet about drop-shadow supporting PNG's. I didn't know drop shadow supported PNG's, so I decided to give it a go.
+The other day [Josh](https://twitter.com/JoshWComeau) made a super cool tweet about drop-shadow supporting PNGs. I didn't know drop shadow supported PNGs, so I decided to give it a go.
 
 <StaticTweet id="1288830824322924544" />
 
 ## HTML Structure
 
-For my example we are using my favourite Pokémon "Eevee" and will place our three Eevee png's in a container.
+For my example, we are using my favorite Pokémon, "Eevee", and will place our three Eevee PNGs in a container.
 
 ```html
 <div class="container">
@@ -27,11 +27,11 @@ For my example we are using my favourite Pokémon "Eevee" and will place our thr
 </div>
 ```
 
-As you can see one is going to be a raw example, one will have a box-shadow and the third will have the drop-shadow.
+As you can see, one will be a raw example, one will have a box shadow, and the third will have a drop shadow.
 
 ## CSS Box Shadow
 
-You probably have seen and used the box-shadow before, it's a cool feature and adds a shadow to our "box".
+You probably have seen and used the box-shadow before. It's a cool feature and adds a shadow to our "box".
 
 It works like this:
 
@@ -47,7 +47,7 @@ It puts a shadow on the image, but on the box of it.
 
 ## CSS Drop Shadow
 
-Then there is a [CSS Filter](https://daily-dev-tips.com/posts/building-a-realtime-photoshop/) which is amazing when it comes to contouring a PNG!
+Then there is a [CSS Filter](https://daily-dev-tips.com/posts/building-a-realtime-photoshop/) which is fantastic when contouring a PNG!
 
 ```css
 .drop-shadow {
@@ -68,7 +68,7 @@ This all will result in the following Codepen.
 
 ## Browser Support
 
-As mentioned before, CSS Filters are cool, but not widely supported yet 😩.
+As mentioned before, CSS Filters are excellent, but not widely supported yet 😩.
 
 There is a [polyfill](https://github.com/Schepp/CSS-Filters-Polyfill), but also limited.
 
