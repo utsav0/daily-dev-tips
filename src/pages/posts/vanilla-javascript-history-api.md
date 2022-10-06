@@ -9,25 +9,25 @@ tags:
   - javascript
 ---
 
-Yesterday we had a brief introduction to the History API, by using the [`pushState`](https://daily-dev-tips.com/posts/vanilla-javascript-update-url-without-refresh/) method.
+Yesterday we had a brief introduction to the History API by using the [`pushState`](https://daily-dev-tips.com/posts/vanilla-javascript-update-url-without-refresh/) method.
 
-Today we'll be diving more into the History API and see what other elements we can use.
+Today we'll dive more into the History API and see what other elements we can use.
 
 ## JavaScript Browser API Back and Forward
 
-So instead of refreshing the current `URL` sometimes, we want to navigate true the history programmatically. The History API has three methods of doing so:
+So, we want to navigate through the history programmatically instead of refreshing the current URL. The History API has three methods of doing so:
 
-- `back()` Same as clicking the back button in the browser
-- `forward()` Same as clicking the forward button
+- `back()` is the Same as clicking the back button in the browser
+- `forward()` is the Same as clicking the forward button
 - `go()` We can go to a specific index forward (`1`) or backward (`-1`)
 
-In action the `back()` method looks like this:
+In action, the `back()` method looks like this:
 
 ```js
 window.history.back();
 ```
 
-The `forward()` in turn looks like this:
+The `forward()` in turn, looks like this:
 
 ```js
 window.history.forward();
@@ -50,7 +50,7 @@ const numberInHistory = window.history.length;
 
 ## JavaScript History API replaceState
 
-As we saw we can use [`pushState`](https://daily-dev-tips.com/posts/vanilla-javascript-update-url-without-refresh/) to change the current state, we can also use `replaceState` for this:
+As we saw, we can use [`pushState`](https://daily-dev-tips.com/posts/vanilla-javascript-update-url-without-refresh/) to change the current state, we can also use `replaceState` for this:
 
 ```js
 history.replaceState({ page: 'unicorn' }, 'Unicorn', '/Unicorn');

@@ -9,7 +9,7 @@ tags:
   - javascript
 ---
 
-Today we are looking into updating the `URL` without doing a refresh. We can use the History API to access and modify the `URL` states.
+Today we are looking into updating the URL without a refresh. We can access and modify the `URL` states using the History API.
 
 The cool part is it has superb browser support!
 
@@ -17,7 +17,7 @@ The cool part is it has superb browser support!
 
 The history API is a set of methods used to manipulate history. For instance, we can go forward and backward, just like clicking the buttons in your browser.
 
-> Also check out this article about other [History API methods](https://daily-dev-tips.com/posts/vanilla-javascript-history-api/)
+> Also, check out this article about other [History API methods](https://daily-dev-tips.com/posts/vanilla-javascript-history-api/)
 
 ## JavaScript history.pushState
 
@@ -25,9 +25,9 @@ Today's focus is on the method called pushState(). We can use this method to pus
 
 The history.pushState() method accepts three arguments:
 
-- `state`: This is an object with details about the `URL`
-- `title`: The title (usually the `<title>` attribute)
-- `url`: The actual `URL` you see in your browser bar.
+- `state`: This is an object with details about the `URL`.
+- `title`: The title (usually the `<title>` attribute).
+- `url`: You see the actual `URL` in your browser bar.
 
 In code, it would look like this:
 
