@@ -58,7 +58,7 @@ We included `mix-blend-mode: difference;` this makes the color blend based on th
 
 Awesome, right?! 🤩
 
-> This also works on images/videos backgrounds and whatnot!
+> This also works on images/video backgrounds and whatnot!
 
 See a demo here:
 

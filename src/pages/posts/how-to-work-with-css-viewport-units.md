@@ -19,7 +19,7 @@ CSS has four viewport-based units we can use. These are `vh`, `vw`, `vmin`, `vma
 
 - **Viewport Height** (vh); Meaning the viewport height, we can have values from 1vh to 100vh. Meaning 1vh = 1% of the viewports height.
 - **Viewport Width** (vw); Meaning the viewport's width can also have values from 1vw to 100vw. Meaning 1vw = 1% of the viewports width.
-- **Viewport Minumum** (vmin): This unit is based on the smallest dimension of the viewport. So if the height is smaller, then the width of 1vmin is 1% of the height.
+- **Viewport Minumum** (vmin): This unit is based on the smallest dimension of the viewport. So if the height is smaller, the width of 1vmin is 1% of the height.
 - **Viewport Maximum** (vmax): This is the same as vmin, but based on the biggest dimension.
 
 ## CSS Viewport magic by demo
@@ -37,7 +37,7 @@ As you can see in the demo, we have created two sections in our HTML.
 
 We set the width to be `100vw`, which means it's 100% of the viewport's width.
 And the height is to be `100vh`, which is 100% of the viewport's height.
-We then gave the `h1` a `font-size` of `4vmax`, so it will also adjust according to the size.
+We then gave the `h1` a `font-size` of `4vmax`, which will also adjust according to the size.
 
 ## How about browser support?
 
