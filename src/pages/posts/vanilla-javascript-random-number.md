@@ -24,7 +24,7 @@ This will return something like this `0.1433017075000662`.
 
 ## Getting a Number bigger than zero
 
-But what if we need a number bigger than zero? Well we can make our own function for that.
+But what if we need a number bigger than zero? Well, we can make our function for that.
 
 ```js
 const randomFunction = function () {
@@ -36,7 +36,7 @@ console.log(randomFunction());
 You can adjust the 100 to increase the number.
 The current setup will return something like `34.68974860200957`.
 
-Now you know how to leverage `Math.random()` feel free to play with this Codepen.
+Now you know how to leverage `Math.random()`, feel free to play with this Codepen.
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="rebelchris" data-slug-hash="gOaVyXX" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vanilla JavaScript Random Number">
   <span>See the Pen <a href="https://codepen.io/rebelchris/pen/gOaVyXX">

@@ -39,13 +39,13 @@ So how does this work, you ask?
 I open my project in my IDE (Visual Studio Code or WebStorm) and start changing my markdown files.
 Either edit the existing ones or create new ones for new blog posts.
 
-Once I'm done, I push the changes to my git branch, automatically triggering a GitHub action.
+Once done, I push the changes to my git branch, automatically triggering a GitHub action.
 
 This GitHub action starts the build command on my Eleventy project (soon to be Astro), which converts all these markdown to HTML output.
 Once this process is done, the HTML files get placed in a "static" branch.
 
 Which triggers Cloudflare pages to pull the latest changes from this branch.
-Cloudflare will do a git pull on this branch; voila, the new changes are online!
+Cloudflare will do a git pull on this branch; the new changes are online!
 
 This all happens in about a minute or so.
 
@@ -60,14 +60,14 @@ And once the content is written, I don't want to hassle logging in to a system, 
 (Although this is roughly the same amount of time)
 
 Another downside to these systems is that they need upkeep. The CMS gets a new version, and you need to update it.
-Something goes wrong, and you won't be able to push new content.
+If something goes wrong, you won't be able to push new content.
 And worse of all, they can get hacked, meaning your website could be at risk.
 
 Not saying it's impossible, but a static website is harder to hack. You would need to hack my GitHub repo or my Cloudflare account, which are pretty complex challenges.
 
 ## Conclusion
 
-I don't want to hate on CMS. They are a fantastic system that should be used.
+I don't want to hate CMS. They are a fantastic system that should be used.
 
 But if you are a developer, consider if you need it?
 Perhaps you can make your life easier by going low-tech as well.
