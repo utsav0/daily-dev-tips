@@ -11,7 +11,7 @@ tags:
 
 Now that we are getting into `SCSS` let's look into using variables and the power that comes with them.
 
-Variables are literally what you expect a definition of a value.
+Variables are literally what you expect as a definition of a value.
 
 These can contain a wide range in `SCSS`:
 
@@ -29,7 +29,7 @@ To declare variables in `SCSS` we use the dollar sign \$.
 $variableName: value;
 ```
 
-Let's define some variables for todays examples:
+Let's define some variables for today's examples:
 
 ```css
 $fontFamily: Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -68,7 +68,7 @@ This will then result in the following Codepen.
 
 ## Overwriting Variables
 
-There is an option to overwrite variables inside an element check out the following use case:
+There is an option to overwrite variables inside an element. Check out the following use case:
 
 ```css
 $color: #ef476f;
@@ -82,7 +82,7 @@ p {
 }
 ```
 
-What happens here, just inside the H1 we change the color to green, will only make the H1 yellow. The p tag will stay our original color.
+What happens here, inside the H1, we change the color to green, which will only make the H1 yellow. The p tag will stay our original color.
 
 There is an option to overwrite the default for good, but I don't know why it exists!
 

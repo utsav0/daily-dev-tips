@@ -13,7 +13,7 @@ This effect is so cool and just around fun to see.
 Today we will learn how to do a **cut-out text** effect in CSS! The effect will show an image through the cut-off text shape.
 
 It works by having a div that holds an image as a background.
-On the div element, we put another text element, using [blend-mode](https://daily-dev-tips.com/posts/building-a-realtime-photoshop/) which will make the image show through the text.
+On the div element, we put another text element, using [blend-mode](https://daily-dev-tips.com/posts/building-a-realtime-photoshop/), which will make the image show through the text.
 
 ### Example code for text cut-out
 
@@ -85,9 +85,9 @@ h1 {
 
 First, we set big font size. I'm using the [viewport size](https://daily-dev-tips.com/posts/how-to-work-with-css-viewport-units/) to make the font responsive.
 
-Then we set the color of the letters to be black and the background white. This gives it a full contrast. You can also change the color to get a cool alpha effect!
+Then we set the color of the letters to black and the background white. This gives it a full contrast. You can also change the color to get an excellent alpha effect!
 
-The last step is enabling the mix-blend-mode with CSS.
+The last step is enabling the mix-blend mode with CSS.
 Since we are using a **full contrast** (black/white), it will remove the black text and show the image behind the text element:
 
 ![CSS text cut out](https://cdn.hashnode.com/res/hashnode/image/upload/v1602653906989/1MZWnW1m2.png)
