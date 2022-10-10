@@ -31,7 +31,7 @@ Let's look at the pseudo-elements and how we can use them in Tailwind CSS.
 
 This pseudo-element can manipulate the first line of a specific sentence.
 
-Let's say we want to make the first line of an article blue, so it pops a bit more. While we are at it, we could also transform the first line to uppercase.
+Let's say we want to make the first line of an article blue so it pops a bit more. While we are at it, we could also transform the first line to uppercase.
 
 ```html
 <p

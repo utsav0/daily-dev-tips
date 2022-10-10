@@ -13,17 +13,17 @@ Now and then, you might want to show specific alerts based on the web browser a 
 
 For instance, this can be because you just made a new Chrome browser extension and want everyone on Chrome to auto-download it.
 
-So let's look in this tutorial how to do browser detection with JavaScript.
+So let's look at this tutorial on browser detection with JavaScript.
 
 ## Non-Preferred detection method
 
-The non-preferred method of detecting a browser type uses the user-agent. However, a lot of browsers and systems spoof this, so it's not reliable.
+The non-preferred method of detecting a browser type uses the user agent. However, many browsers and systems spoof this, so it's unreliable.
 
 We won't be diving into that in this tutorial.
 
 ## JavaScript Browser Detection
 
-So we'll be using feature detection, it validates browser-specific elements.
+So we'll be using feature detection, which validates browser-specific elements.
 
 What feature detection looks like in code:
 
@@ -75,7 +75,7 @@ output += 'isBlink: ' + isBlink + '<br />';
 document.body.innerHTML = output;
 ```
 
-> Credit of this script goes to [Rob W](https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser)
+> Credit for this script goes to [Rob W](https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser)
 
 ### View the example Javascript code for detecting browsers on Codepen
 

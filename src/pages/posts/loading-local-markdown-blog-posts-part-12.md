@@ -166,7 +166,7 @@ Up to you to start adding some more blog articles from here.
 
 In the following articles, we'll make sure our blog pages are working and modify the blog posts shown on the homepage.
 
-You can find today's code on the following [GitHub branch](https://github.com/rebelchris/next-portfolio/tree/part-11).
+You can find today's code on the following [GitHub branch](https://github.com/rebelchris/next-portfolio/tree/part-12).
 
 ### Thank you for reading, and let's connect!
 
