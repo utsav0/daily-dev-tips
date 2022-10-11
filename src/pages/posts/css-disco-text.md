@@ -85,7 +85,7 @@ We then add a transition on all effects.
 }
 ```
 
-Now for our main div, it's nothing fancy, some general styling to make it look nice.
+Now for our main div, it's nothing fancy, with some general styling to make it look nice.
 
 This article uses a checkbox to turn our disco on/off. We'll make the checkbox invisible across our whole page for easy usability.
 

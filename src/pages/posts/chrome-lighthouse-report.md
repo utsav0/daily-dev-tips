@@ -9,7 +9,7 @@ tags:
   - chrome
 ---
 
-Let's say you made your first or another website. Of course, we want to make sure we create an accessible and fast website.
+Let's say you made your first or another website. Of course, we want to create an accessible and fast website.
 We can do a basic audit with Lighthouse inside of Chrome!
 
 We can test for the following categories in Lighthouse:
@@ -29,7 +29,7 @@ This will open de `Developer tools`. Now click the `Lighthouse` tab.
 
 ## Running a Lighthouse Audit in Chrome
 
-We can select the categories we want to test for to run the audit and click the `generate report` button.
+We can select the categories we want to test to run the audit and click the `generate report` button.
 
 We then get a full report with tips on what we can improve.
 
@@ -43,7 +43,7 @@ Some general tips I've learned over the years
 - Make fewer CSS Requests (Rather have one or a few stylesheets instead of multiple)
 - Make fewer JavaScript requests (Same as above)
 - Leverage Browser Caching [GtMetrix](https://gtmetrix.com/leverage-browser-caching.html)
-- Don't overdue on fonts loading (Use one/two external fonts)
+- Don't overdo on fonts loading (Use one/two external fonts)
 
 ### Thank you for reading, and let's connect!
 
