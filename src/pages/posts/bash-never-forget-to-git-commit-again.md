@@ -19,7 +19,7 @@ Are you:
 
 Then this article is for you!
 
-Today we will be making a `bash` script that we can run at the end of our day.
+Today we will make a `bash` script that we can run at the end of our day.
 It will loop through our project directory and tell us the following statistics per project:
 
 - Is it a git repo
@@ -38,9 +38,9 @@ It will look like this:
 ## Bash git commit prompt script
 
 Today we'll be looking at a single `bash` script.
-I'm going through this section by section. At the end I'll link it on GitHub for you to download.
+I'm going through this section by section. Finally, I'll link it on GitHub for you to download.
 
-We will start by defining our variables
+We will start by defining our variables.
 
 > Change the `DIR` to your project folder.
 
@@ -54,7 +54,7 @@ Then we need to loop over each subdirectory in our projects folder.
 ```bash
 for dir in $DIR*
 do
-	// Loop here
+    // Loop here
 done
 ```
 
@@ -78,11 +78,11 @@ MSG="";
 ```
 
 Then we check if it's a git project.
-If it's not a git project we change our message.
+If it's not a git project, we change our message.
 
 ```bash
 if [ -d "$GITBASED" ]; then
-		// Git based!
+        // Git-based!
 else
     // Not a valid git project
     MSG=": Not a valid git project 👀"
@@ -95,7 +95,7 @@ If it is a git project, we will first define a test variable that will execute `
 TEST=$(git status $dir);
 ```
 
-Our variable TEST now contains the return value of `git status` now we will use some `if...else` statements to check if it contains certain substrings:
+Our variable TEST now contains the return value of `git status`. Now we will use some `if...else` statements to check if it contains certain substrings:
 
 ```bash
 if [[ $TEST == *"nothing to commit"* ]]; then
@@ -109,7 +109,7 @@ elif [[ $TEST == *"Untracked files"* ]]; then
 fi
 ```
 
-And lastly, we will echo the message prefixed with he project name and change back a directory.
+And lastly, we will echo the message prefixed with the project name and change it back to a directory.
 
 ```bash
 echo ${dir##*/}$MSG

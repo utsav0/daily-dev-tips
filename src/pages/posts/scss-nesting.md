@@ -10,11 +10,11 @@ tags:
 ---
 
 This is, without a doubt, my favorite part of `SCSS`. Nesting is used to nest code inside each other; it's very versatile.
-Meaning, in the long term, it will make you think twice about naming because it's easier to sort.
+In the long term, it will make you think twice about naming because it's easier to sort.
 
 ## Basic SCSS Nesting
 
-In basic nesting can be used as follows
+Basic nesting can be used as follows.
 
 Let's take the following HTML
 
@@ -26,7 +26,7 @@ Let's take the following HTML
 </ul>
 ```
 
-We can then make some cool `SCSS` like this
+We can then make some cool `SCSS` like this.
 
 ```css
 ul {
@@ -44,7 +44,7 @@ ul {
 }
 ```
 
-This will then render in the following `CSS`
+This will then render in the following `CSS`.
 
 ```css
 ul {
@@ -73,19 +73,17 @@ This looks like the following Codepen.
 
 ## SCSS Dash Nesting
 
-Another really cool one is class nesting
+Another cool one is class nesting.
 
 ```html
 <div class="box">
   <div class="box-inner">
-    <h1 class="box-inner-title">
-      Welcome 👏
-    </h1>
+    <h1 class="box-inner-title">Welcome 👏</h1>
   </div>
 </div>
 ```
 
-And we can then use the following `SCSS`
+And we can then use the following `SCSS`.
 
 ```css
 .box {
@@ -106,11 +104,11 @@ And we can then use the following `SCSS`
 }
 ```
 
-Cool right! It just makes it more easy and clear what a part of your `CSS` is for.
+Cool right! It makes it more manageable and clear what a part of your `CSS` is for.
 
 ### SCSS Sub Nesting
 
-We can also use sub nesting for our pseudo-selectors.
+We can also use sub-nesting for our pseudo-selectors.
 
 ```css
 .box {
@@ -122,7 +120,7 @@ We can also use sub nesting for our pseudo-selectors.
 }
 ```
 
-As you can see, these also use the & sign, and can be used for `hovers` but also `nth-child` etc.
+As you can see, these also use the & sign and can be used for `hovers` but also `nth-child` etc.
 
 This will result in the following Codepen.
 
