@@ -14,9 +14,9 @@ In this article, we'll be setting up a basic TypeORM started. I want this starte
 
 > Note: You can use this article to set up a node application powered by TypeORM.
 
-For those who don't know TypeORM yet, it is an ORM that can run very wide because they support any JavaScript version.
+For those who don't know TypeORM yet, it is an ORM that can run very widely because they support any JavaScript version.
 
-In non-technical terms, it is a way to interact and manage your database. TypeORM takes care of the migrations and structure of your database. And on the other side, it can execute queries on the database.
+In non-technical terms, it is a way to interact with and manage your database. TypeORM takes care of the migrations and structure of your database. And on the other side, it can execute queries on the database.
 
 [TypeORM](https://github.com/typeorm/typeorm) is a super popular system with a massive user base.
 
@@ -24,7 +24,7 @@ The end goal for today is to have a primary database managed by TypeORM. We also
 
 ## Setting up a TypeORM project
 
-Luckily, TypeORM provides a super powerful CLI that can generate an starter project for us.
+Luckily, TypeORM provides a super powerful CLI that can generate a starter project for us.
 
 To install the CLI, you can run the following command.
 
@@ -108,7 +108,7 @@ photos: Photo[];
 
 If you are keen to discover all the possible types, you can use the [TypeORM docs on this are excellent](https://typeorm.io/#/entities/entity-columns).
 
-Once this is set up, we have our entities done. However, they do not exist in the database as of yet.
+Once this is set up, we will have our entities done. However, they do not exist in the database as of yet.
 And no worries, TypeORM will manage all of this for us.
 
 ## Connecting with the database

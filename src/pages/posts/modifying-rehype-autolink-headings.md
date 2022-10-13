@@ -12,7 +12,7 @@ tags:
 The previous article introduced a table of contents in our markdown files.
 For this, we leverage the rehype autolink headings plugin.
 
-The cool part about this plugin is that we can modify the output to better match our website's style.
+The cool part about this plugin is that we can modify the output to match our website's style better.
 
 Let's first see what the plugin does by default, and by inspecting our headings, we can see the following markup added.
 
@@ -20,7 +20,7 @@ Let's first see what the plugin does by default, and by inspecting our headings,
 
 As you can see, the plugin added a `href` element inside a span element.
 
-This is great to make the TOC plugin work; however, we can modify this output to make more sense for our design.
+This is great for making the TOC plugin work; however, we can modify this output to make more sense for our design.
 
 ## Modify the Rehype Autolink Headings plugin
 
@@ -45,7 +45,7 @@ And we can set these in the following way:
 
 Next, we can also set the properties, which are by default: `{ariaHidden: true, tabIndex: -1}`
 
-You can for instance add a class here:
+You can, for instance add a class here:
 
 ```js
 {ariaHidden: true, tabIndex: -1, class: 'my-class'}
@@ -116,7 +116,7 @@ And by doing that, we can create this unique SVG link icon, which clarifies our 
 
 ![Added visual header link](https://cdn.hashnode.com/res/hashnode/image/upload/v1645888168147/ZWvDf5mNq.png)
 
-You can use the `visually-hidden` class to hide the text for the user but have the screenreader read it out.
+You can use the `visually-hidden` class to hide the text for the user but have the screen reader read it out.
 
 ```css
 .visually-hidden {
@@ -132,7 +132,7 @@ You can use the `visually-hidden` class to hide the text for the user but have t
 }
 ```
 
-And that's how we can modify the rehype autolink headings plugin to be our bit more.
+And that's how we can modify the rehype auto-link headings plugin to be our bit more.
 
 You can find the complete code on [GitHub](https://github.com/rebelchris/astro-toc/tree/autolink-headings).
 
