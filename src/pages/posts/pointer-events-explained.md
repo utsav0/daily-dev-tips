@@ -10,7 +10,7 @@ tags:
   - javascript
 ---
 
-In much of my code, you've seen the use of `pointer-events: none .` I've mentioned it is because we only want JavaScript to go off on the main element, but let's explain a bit better.
+In much of my code, you've seen the use of `pointer-events: none .` I've mentioned it because we only want JavaScript to go off on the main element, but let's explain it better.
 
 ## HTML Structure
 
@@ -28,7 +28,7 @@ So for our demo, we will make a wrapping div setup.
 ```
 
 We created multiple divs and gave all a `data-name` attribute. This will be printed in the response div as output.
-But as you click around in our demo below, you will see each element, where we want the whole element to be treated as one.
+But as you click around in our demo below, you will see each element where we want the whole element to be treated as one.
 
 ## JavaScript setup
 

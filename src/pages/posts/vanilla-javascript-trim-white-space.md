@@ -11,11 +11,11 @@ tags:
 
 Let's dive into the `JavaScript` methods for removing white space from a string.
 
-To trim the whitespace, we are going to use the `trim`, `trimStart`, and `trimEnd` methods in `Vanilla JavaScript`.
+To trim the whitespace, we will use the `trim`, `trimStart`, and `trimEnd` methods in `Vanilla JavaScript`.
 
 ## Trim whitespace at the beginning and end
 
-The `trim()` method is an easy way to remove white space from the **beginning and end** of a string. After the trimming it will return a new string.
+The `trim()` method is an easy way to remove white space from the **beginning and end** of a string. After the trimming, it will return a new string.
 
 ```js
 const quote = "  Gotta Catch 'Em All.      ";
@@ -23,7 +23,7 @@ console.log(quote.trim());
 // "Gotta Catch 'Em All."
 ```
 
-Super simple as you can see, we removed all trailing and ending whitespace.
+Super simple. As you can see, we removed all trailing and ending whitespace.
 
 ## Remove white space from the beginning
 
@@ -35,9 +35,9 @@ console.log(quote.trimStart());
 // "Gotta Catch 'Em All.      "
 ```
 
-## Vanilla JavaScript delete whitespace at the end
+## Vanilla JavaScript deletes whitespace at the end
 
-Yes, you guessed it right. The `trimEnd` method will delete the extra whitespace at a strings ending.
+Yes, you guessed it right. The `trimEnd` method will delete the extra whitespace at the strings ending.
 
 ```js
 const quote = "  Gotta Catch 'Em All.      ";
@@ -45,7 +45,7 @@ console.log(quote.trimEnd());
 // "  Gotta Catch 'Em All."
 ```
 
-### See the code exmples in this Codepen
+### See the code examples in this Codepen
 
 Feel free to play around with this Codepen.
 
