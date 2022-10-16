@@ -9,7 +9,7 @@ tags:
   - angular
 ---
 
-Yesterday, we looked at [dynamic form fields](https://daily-dev-tips.com/posts/angular-dynamically-change-form-validators/), and it made me think about custom classes in Angular.
+Yesterday, we looked at [dynamic form fields](https://daily-dev-tips.com/posts/angular-dynamically-change-form-validators/), which made me think about custom classes in Angular.
 
 You might want to add `class1` based on a condition or `class2` if the condition is not met.
 
@@ -20,7 +20,7 @@ Well, that is where the ngClass comes in handy.
 
 Before we make things dynamic, let's first look at how it looks without any conditions.
 
-If you want to work along with me, I'm using [this branch as the starter template](https://github.com/rebelchris/angular-starter-demo/tree/feature/tailwind).
+If you want to work with me, I'm using [this branch as the starter template](https://github.com/rebelchris/angular-starter-demo/tree/feature/tailwind).
 
 Open up the `app.component.html` file.
 
@@ -54,14 +54,17 @@ export class AppComponent {
 If we run this, we get a purple block, which is correct. Let's add a simple click function to toggle the state.
 
 ```html
-<div (click)="color = !color" [ngClass]="[color ? 'bg-blue-500' : 'bg-purple-500']">
+<div
+  (click)="color = !color"
+  [ngClass]="[color ? 'bg-blue-500' : 'bg-purple-500']"
+>
   Hi, I'm the div
 </div>
 ```
 
 This will toggle the color variable to the opposite.
 
-And now we should see the color change if we click it.
+And now, we should see the color change if we click it.
 
 ![Angular ngClass dynamic condition](https://cdn.hashnode.com/res/hashnode/image/upload/v1616855978677/XWmkJTy-r.gif)
 

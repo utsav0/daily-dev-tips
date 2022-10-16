@@ -9,25 +9,25 @@ tags:
   - css
 ---
 
-I'm very excited about this feature, although it's not yet widely supported.
+I'm excited about this feature, although it's not yet widely supported.
 
-Making masonry grids is so cool! It's that kind of elemental table effect, where blocks with different sizes can stack. (Like Tetris!)
+Making masonry grids is so cool! It's that elemental table effect, where blocks of different sizes can stack. (Like Tetris!)
 
-And yes, we could do this before, with either some JavaScript or come very close with flex and grid, but it wasn't perfect.
+And yes, we could do this before, with some JavaScript or come very close with flex and grid, but it wasn't perfect.
 
 Now there is the `masonry` option for `grid-template-rows`.
 
 > Note: This is unfortunately far from being well supported, so do note that!
 
-The end result can look like this:
+The result can look like this:
 
 ![CSS Masonry layout](https://cdn.hashnode.com/res/hashnode/image/upload/v1616477465934/BtaQQ9gO_.png)
 
 ## Enabling masonry support
 
-Currently, we can try out the feature in Firefox, but we do need to enable it first.
+We can currently try out the feature in Firefox, but we need to enable it first.
 
-Open up Firefox and type the following in the address bar: `about:config`.
+Open Firefox and type the following in the address bar: `about:config`.
 
 Then type: `layout.css.grid-template-masonry-value.enabled` and set this to true.
 
@@ -35,7 +35,7 @@ Now we can enjoy CSS native grids!
 
 ## Creating our masonry grid
 
-To create the grid, we generally just use [CSS `grid`](https://daily-dev-tips.com/posts/css-grid-introduction/) options.
+To create the grid, we use [CSS `grid`](https://daily-dev-tips.com/posts/css-grid-introduction/) options.
 
 Let's start by creating a basic structure:
 
@@ -64,7 +64,7 @@ Now let's add the magic in CSS.
 And yes, that's it!
 All we need to create masonry layouts.
 
-In browser that doesn't support it, we get the following result:
+In a browser that doesn't support it, we get the following result:
 
 ![Browser that doesn't support CSS masonry](https://cdn.hashnode.com/res/hashnode/image/upload/v1625035106721/s3qVCxIoi.png)
 
@@ -72,7 +72,7 @@ However, in browsers that do support it, we see the following:
 
 ![CSS Masonry layout](https://cdn.hashnode.com/res/hashnode/image/upload/v1616477465934/BtaQQ9gO_.png)
 
-Wow, right? It just auto-filled where each image should go, and it looks amazing.
+Wow, right? It just auto-filled where each image should go, and it looks fantastic.
 
 I'm super amped for this feature to become widely supported.
 
@@ -89,7 +89,7 @@ For those that use Firefox, enable the flag and check it out on this Codepen.
 
 Unfortunately, it's really new and therefore not supported. We have to enable a flag in Firefox to see it in action.
 
-To enable in Firefox, set the following flag to true.
+To enable Firefox, set the following flag to true.
 `layout.css.grid-template-masonry-value.enabled`.
 
 ### Thank you for reading, and let's connect!
