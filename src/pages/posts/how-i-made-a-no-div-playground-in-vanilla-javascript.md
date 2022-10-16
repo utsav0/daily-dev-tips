@@ -19,7 +19,7 @@ I had this idea for a while but didn't get to it.
 
 My idea is to create a Codepen/JsFiddle/CSSPlayground but for no-div CSS art.
 
-Why? Because I want to get into CSS art, and like the strict option one can have by not being able to add other elements.
+Why? Because I want to get into CSS art, and I like the strict option one can have by not being able to add other elements.
 
 Also, I wanted to see how one can build a playground from scratch.
 When I look at Codepen, I think it must be hard to make, but it's not that bad when you start to think about it.
@@ -42,7 +42,7 @@ I first drew a super high-level scheme for this project to see what kind of data
 
 ![Sketch before](https://cdn.hashnode.com/res/hashnode/image/upload/v1608991883108/69q3jT_LE.jpeg)
 
-I've decided to narrow the art down to usage of the `body`, `body:before`, and `body:after` elements.
+I've decided to narrow the art down to using the `body`, `body:before`, and `body:after` elements.
 
 This will be rendered on the left-hand side of the screen, then on the right is an output div with a fixed size of 200x200. This is another limit to the tool, but more on that in the plans.
 
@@ -52,7 +52,7 @@ People should then be able to save whatever they made and share their div URL.
 
 So with this in mind, we can start building this no-div playground for our CSS art.
 
-I will share a slimmed-down version for this article so you're not getting stuck on the layout issues.
+I will share a slimmed-down version of this article, so you're not getting stuck on the layout issues.
 
 As for our `HTML` we can use the following.
 
@@ -92,7 +92,7 @@ This will give us the following output.
 
 ![Basic styling no-div css art playground](https://cdn.hashnode.com/res/hashnode/image/upload/v1608992442735/uqVUv50Q7.png)
 
-But what we are interested in is getting the values from the textarea's.
+But we are interested in getting the values from the textarea's.
 
 Let's add some `JavaScript` to this mix.
 
@@ -104,7 +104,7 @@ const cssBefore = document.getElementById('cssBefore');
 const cssAfter = document.getElementById('cssAfter');
 ```
 
-What we retrieve is all three of our textarea's based on their id.
+We retrieve all three of our textarea's based on their id.
 
 Then we need to add an event listener to retrieve every time the input is changed.
 In our case, we will leverage a global `keyup` listener and use [event bubbling](https://daily-dev-tips.com/posts/vanilla-javascript-event-listener-on-multiple-elements/) to stop if it's not one of our textareas.
@@ -128,7 +128,7 @@ Every time the key-up event fires inside one of our textareas we get the values.
 
 ## Rendering the output
 
-Of course, it's cool to get these values, but what do we do with them?
+Of course, getting these values is cool, but what do we do with them?
 You may have noted our playground `HTML` uses an iframe. Although I'm usually not a big fan, it serves its purpose for this example.
 
 We can modify stuff inside the iframe without affecting our main page.
@@ -176,7 +176,7 @@ So decided to push and get this in V1.
 
 I looked at several options, including [google sheets](https://daily-dev-tips.com/posts/nodejs-write-data-in-a-google-sheet/), air table, but decided to go with Firebase.
 
-Firebase is a fantastic real-time database. In this example, I didn't really need the real-time part, but it works well.
+Firebase is a fantastic real-time database. I didn't really need the real-time part in this example, but it works well.
 
 So first, head over to [Firebase](https://console.firebase.google.com/), sign up, and create your first project.
 
@@ -188,19 +188,19 @@ We will only be focussing on the Realtime Database.
 
 Click the button to add a new database.
 
-Pick any of the locations that work for you, then choose `test mode` so we can write data to our database.
+Pick any locations that work for you, then choose `test mode` so we can write data to our database.
 
-Once it's created you should see a view like this.
+Once it's created, you should see a view like this.
 
 ![Firebase database](https://cdn.hashnode.com/res/hashnode/image/upload/v1608994159499/pnQZlj2nI.png)
 
-That's it. We are done with setting up our database. Yeah, not kidding; we don't need to define any tables or structures.
+That's it. We are done with setting up our database. Yeah, not kidding; we don't need to define tables or structures.
 
 We need to enhance our `HTML` file to read and write to Firebase.
 
 First, let's start by adding the Firebase `JavaScript` we need. In our instance, we will load them from a CDN.
 
-Add the following lines before you're closing the `</body>` tag, but above our custom script.
+Add the following lines before closing the `</body>` tag, but above our custom script.
 
 That will load all the needed scripts.
 
@@ -212,7 +212,7 @@ Then add a new web-app
 
 ![Firebase new web app](https://cdn.hashnode.com/res/hashnode/image/upload/v1608994418770/SmsK8W7vE.png)
 
-Enter a new one on the next screen and you are done.
+Enter a new one on the next screen, and you are done.
 
 Now grab the bottom part where it states `firebaseConfig`.
 
@@ -241,7 +241,7 @@ We also need to initialize our database.
 const database = firebase.database();
 ```
 
-Then we will make a save function that will create a new entry in our database.
+Then we will make a save function to create a new database entry.
 
 The function looks like this.
 
@@ -300,7 +300,7 @@ const search = new URLSearchParams(currentURL);
 const searchId = search.get('id');
 ```
 
-This code gets the current URL from the location bar. It then converts that into something called `URLSearchParams` which has its properties.
+This code gets the current URL from the location bar. It then converts that into something called `URLSearchParams`, which has its properties.
 
 These we can get by using the `get` method.
 
@@ -328,7 +328,7 @@ if (searchId.length >= 1) {
 We check if the searchId is set and if so, we query the database on this ref.
 We get the actual value by using the `once` function if we get it. We use this one because it doesn't change for now.
 
-Then we use the same way to write the stylesheet to this iframe.
+Then we use the same way to write the stylesheet for this iframe.
 
 This will give us the following result.
 
@@ -340,7 +340,7 @@ What we made so far you can download here, download the [no-div css art playgrou
 
 What we have made so far.
 
-- Retrieving values from textarea's
+- Retrieving values from text areas
 - Write these values to an iframe
 - Save the CSS Art into Firebase
 - Retrieve the CSS Art from Firebase
@@ -348,7 +348,7 @@ What we have made so far.
 Now, all we need to do is host it somewhere.
 In my case, I choose to host it on Netlify because I love how easy the git deployments are.
 
-Because this is a plain `HTML` script, using only `vanilla JavaScript`, we don't need any fancy deployment settings and can deploy from a git repo.
+Because this is a plain `HTML` script using only `vanilla JavaScript`, we don't need any fancy deployment settings and can deploy from a git repo.
 
 In this article, you can find more information on [deploying to Netlify](https://daily-dev-tips.com/posts/hosting-a-static-blog-on-netlify/).
 
