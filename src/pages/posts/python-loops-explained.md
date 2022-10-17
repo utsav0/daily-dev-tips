@@ -24,13 +24,13 @@ Let me first show you how a basic for loop in Python looks:
 
 ```python
 for x in y:
-	# Do something
+    # Do something
 ```
 
 Based on this example, you can already see it translates to:
 For each element X inside of statement Y, Evaluate a code block.
 
-Let's say we have a list with animals and would like to print each animal.
+Let's say we have a list of animals and would like to print each animal.
 
 ```python
 animals = ["cat", "dog", "penguin", "tiger"]
@@ -38,7 +38,7 @@ for animal in animals:
     print(animal)
 ```
 
-This will result in:
+This will result in the following:
 
 ```
 cat
@@ -65,19 +65,19 @@ Happy Birthday
 
 ## Python while loop
 
-Besides the for loop, there is also the option to loop while a certain condition is met.
+Besides the for loop, there is also the option to loop while a specific condition is met.
 
 The basics for a while loop are like this:
 
 ```python
 while x == True:
-	# Do something
+    # Do something
 ```
 
 With that, we say while X is true, you must keep executing this code block.
-If we actually used the code above, we would, however, build an infinite loop.
+If we used the code above, we would build an infinite loop.
 
-So let's make a basic while loop and break it after the first run, so it only executes once
+So let's make a basic while loop and break it after the first run so it only executes once
 
 ```python
 foo = True
@@ -95,7 +95,7 @@ Foo is true
 Foo is false now!
 ```
 
-You've seen the range option, but we could also use a while loop for that.
+You've seen the range option, but we could also use a while loop.
 
 ```python
 number = 2

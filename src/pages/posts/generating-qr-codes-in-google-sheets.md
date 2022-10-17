@@ -45,9 +45,9 @@ Using that URL as an image, we get the following result.
 
 ## Google Sheets dynamic QR codes
 
-Now that we know about creating QR codes, let's put this into action as we generate them dynamically in Google Sheets.
+Now that we know about creating QR codes let's put this into action as we generate them dynamically in Google Sheets.
 
-Open up a new Google Sheets and fill out column A with random websites.
+Open up new Google Sheets and fill out column A with random websites.
 
 Then in column B, we will add the following formula.
 
