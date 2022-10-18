@@ -9,15 +9,15 @@ tags:
   - css
 ---
 
-To get cracking with `SCSS`, I think a good and maybe the most useful starting point is `@import`.
+To get cracking with `SCSS`, I think a good and maybe the most helpful starting point is `@import`.
 
-SCSS uses a DRY (Don't Repeat Yourself) methodology. And one way to help with this is to separate code in specific files and folders.
+SCSS uses a DRY (Don't Repeat Yourself) methodology. And one way to help with this is to separate code into specific files and folders.
 
 Some files you can split up are: reset, variables, colors, fonts, etc.
 
 ## SCSS Import Usage
 
-To use the `@import` we use the following syntax:
+To use the `@import`, we use the following syntax:
 
 ```css
 @import 'variables';
@@ -25,7 +25,7 @@ To use the `@import` we use the following syntax:
 
 As you can see, we don't use an extension.
 
-We can ofcourse also import multiple files this way:
+We can of course also import multiple files this way:
 
 ```css
 @import 'reset';
@@ -46,7 +46,7 @@ So let's say we have a reset like such:
 }
 ```
 
-And then our `main.scss`
+And then our `main.scss`.
 
 ```css
 @import 'reset';
@@ -57,7 +57,7 @@ body {
 }
 ```
 
-This will result in the following `main.css`
+This will result in the following `main.css`.
 
 ```css
 * {
@@ -76,7 +76,7 @@ body {
 One powerful aspect is the use of partials.
 You have to keep in mind `SCSS` will compile the normal `SCSS` files. But if we start our files with an underscore like: `_reset.scss` it will not be compiled directly.
 
-To use a file let's say `_variables.scss` we can do the following:
+To use a file, let's say `_variables.scss`, we can do the following:
 
 ```css
 @import 'variables';
@@ -97,7 +97,7 @@ Another thing we can do is use folders like such:
 `component/_buttons.scss`
 `component/_dropdown.scss`
 
-These can we used as follows:
+These can be used as follows:
 
 ```css
 @import 'base/reset';
@@ -106,7 +106,7 @@ These can we used as follows:
 @import 'component/dropdown';
 ```
 
-This gives our project way more clarity and organise our code.
+This gives our project way more clarity and organises our code.
 
 ### Thank you for reading, and let's connect!
 

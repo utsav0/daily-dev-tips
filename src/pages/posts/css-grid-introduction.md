@@ -9,16 +9,16 @@ tags:
   - css
 ---
 
-Today we'll be looking at a `flex` competitor called `CSS` Grid!
-As the name suggests, it's an awesome tool to make grids and layouts.
+Today we'll look at a `flex` competitor called `CSS` Grid!
+As the name suggests, it's a fantastic tool for making grids and layouts.
 
-In general, a grid is build by having a container and some children inside it.
+Generally, a grid is built by having a container and some children inside it.
 
 > Extra articles: [CSS Grid Container](https://daily-dev-tips.com/posts/css-grid-container/) and [CSS Grid Item](https://daily-dev-tips.com/posts/css-grid-item/)
 
 ## CSS Basic Grid
 
-As for our `HTML` we are using the following setup
+As for our `HTML` we are using the following setup.
 
 ```html
 <div class="grid">
@@ -45,7 +45,7 @@ And to style this basic grid into four equal columns:
 }
 ```
 
-Note we add the `grid-gap` property, if we leave that out, the columns will be stuck to each other.
+Note we add the `grid-gap` property. If we leave that out, the columns will be stuck to each other.
 The template will work by defining it will have four small columns.
 
 See and test it on Codepen.
@@ -95,9 +95,9 @@ For the `CSS`:
 }
 ```
 
-As you can see, we use `grid-column` to span the grid over two blocks horizontal.
+As you can see, we use `grid-column` to span the grid over two horizontal blocks.
 
-And `grid-row` to span over two blocks vertical.
+And `grid-row` to span over two blocks vertically.
 
 Feel free to play around with this Codepen.
 
