@@ -9,7 +9,7 @@ tags:
   - css
 ---
 
-Let's get a closer look at using `@mixins` in `SCSS`. You can look at mixins like the [import](https://daily-dev-tips.com/posts/scss-import/) we used before. But mixins place a certain set of codes on the element we are mixing in.
+Let's look at using `@mixins` in `SCSS`. You can look at mixins like the [import](https://daily-dev-tips.com/posts/scss-import/) we used before. But mixins place specific codes on the element we are mixing.
 
 ## Defining our Mixin
 
@@ -23,11 +23,11 @@ We use the `@mixin` directive to define our mixin, so let's go ahead and create 
 }
 ```
 
-> Note: Naming in SCSS can be either with - or \_ they are considered the same and can be used at the same time!
+> Note: Naming in SCSS can be either with - or \_; they are considered the same and can be used simultaneously!
 
 ## Using our Mixin
 
-To use our mixin we simply use the `@include` statement:
+To use our mixin, we use the `@include` statement:
 
 ```css
 .container {
@@ -60,7 +60,7 @@ Another cool thing we can do is use mixins inside each other like so:
 
 ## Mixin and Arguments
 
-Something that is really strong for using mixins is the use of arguments.
+Something strong for using mixins is the use of arguments.
 
 We can define our mixin as such:
 
@@ -74,7 +74,7 @@ We can define our mixin as such:
 }
 ```
 
-> Note: We added default parameters, but these are not mandatory, you can leave them out.
+> Note: We added default parameters, but these are not mandatory. You can leave them out.
 
 And once we call it, pass these arguments:
 
@@ -86,8 +86,8 @@ And once we call it, pass these arguments:
 
 ## Pro-tip
 
-A really good pro-tip is to use Mixins for vendor prefixes!
-It will safe you so much time for border-radius for example:
+A good pro-tip is to use Mixins for vendor prefixes!
+It will save you so much time for border-radius, for example:
 
 ```css
 @mixin border-radius($amount) {

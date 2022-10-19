@@ -12,7 +12,7 @@ tags:
 Who doesn't like Mr. and Mrs. Potato Head!
 
 Today we will recreate the iconic Mr. Potato Head in `JavaScript`.
-Then we will learn to drag all of Mr. Potato Heads parts on the screen to his body.
+Then we will learn to drag all of Mr. Potato Head parts on the screen to his body.
 
 ![Mr. Potato Head](https://media.giphy.com/media/9GimADqtnpAPe/giphy.gif)
 
@@ -115,7 +115,7 @@ draggableElements.forEach((element) => {
 Then we need to attach a `mousedown` event listener. This will be our starting point. We will define the current x and y position using `offsetLeft` and `offsetTop`.
 Then we get the mouse positions x and y.
 
-And we attach an event listener to `mousemove` since that will be us, dragging apart. Once we move our mouse, we call the `draggable` function, which we will make in a second.
+And we attach an event listener to `mousemove` since that will be us dragging apart. Once we move our mouse, we call the `draggable` function, which we will make in a second.
 
 ```js
 draggableElements.forEach((element) => {
@@ -134,7 +134,7 @@ window.addEventListener('mousemove', draggable, false);
 
 Let's start with our JS function to **drag elements** on the screen.
 
-All this function does is change our part's `left` and `top` positions. And Set the `z-index` higher, so it's on top.
+All this function does is change our part's `left` and `top` positions. And Set the `z-index` higher so it's on top.
 
 ```js
 function draggable(e) {
@@ -167,7 +167,7 @@ window.addEventListener(
 
 In this section, we add a `mouseup` event to our window, and once that happens, we remove the `z-index` from our dragging element and remove the draggable which down element.
 
-That is it. We can now drag HTML elements on the screen as showcased on Mr. Potato Head's body!
+That is it. We can now drag HTML elements on the screen, as showcased on Mr. Potato Head's body!
 
 ### Thank you for reading, and let's connect!
 
