@@ -11,7 +11,7 @@ tags:
 
 How to use CSS position:sticky 🦎
 
-Position sticky is one of those things that I genuinely enjoy in CSS. Simple, easy, but makes such a difference.
+Position sticky is one of those things that I genuinely enjoy in CSS. Simple and easy, but it makes such a difference.
 
 You can see a demo below; scroll down and see the first image being sticky to the left.
 

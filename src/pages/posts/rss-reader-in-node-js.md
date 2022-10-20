@@ -9,21 +9,21 @@ tags:
   - nodejs
 ---
 
-This week I want to focus on helping myself being more effective and automated.
+This week I want to focus on helping myself be more effective and automated.
 So we are going to build an RSS reader that functions as an automated social media publishing tool.
 
-This tool will be build in `node.js` and will have the following sequence for now:
+This tool will be built in `node.js` and will have the following sequence for now:
 
-1. Get all posts from a websites RSS feed
+1. Get all posts from a website RSS feed
 2. Loop through the posts and see if they are already published (we keep track of this in a json file)
-3. If not, we get the posts content and publish to Facebook
-4. We also post this to Twitter
+3. If not, we get the content of the post and publish on Facebook
+4. We also post this on Twitter
 
 Today we will start this process and see how we can parse a websites `RSS feed`.
 
-## RSS reader app in `node.js`
+## RSS reader app in `node.js.`
 
-> Note: Make sure you have `node.js` installed on your machine see [nodejs website](https://node.js.org/en/) for installation procedure.
+> Note: Ensure you have `node.js` installed on your machine. See [nodejs website](https://node.js.org/en/) for the installation procedure.
 
 To create a basic app in `node.js` we run the following command in our terminal:
 
@@ -31,25 +31,25 @@ To create a basic app in `node.js` we run the following command in our terminal:
 mkdir rss-app && cd rss-app && npm init
 ```
 
-We are doing 3 thins here:
+We are doing three things here:
 
 1. `mkdir rss-app` this created a directory called rss-app
 2. `cd rss-app` this command tells us to `change directory` into a folder called rss-app
-3. `npm init` this command comes with `node.js` and created a blank template it will ask a couple questions which you can just enter through.
+3. `npm init` this command comes with `node.js` and creates a blank template. It will ask a couple of questions that you can enter through.
 
 Read more: [Basic Node.js Express application](https://daily-dev-tips.com/posts/basic-nodejs-express-application/)
 
 ## Creating our node.js entry point
 
-We start off by creating the basic entry point for our app, every `node.js` project needs an entry point.
+We start by creating the basic entry point for our app. Every `node.js` project needs an entry point.
 
 ```js
 touch index.js
 ```
 
-Touch means we create a new file and it's called index.js
+Touch means we create a new file, and it's called index.js
 
-Next we install our **rss parser**
+Next, we install our **rss parser**
 
 ```js
 npm i rss-parser
@@ -61,7 +61,7 @@ This tells node to install a package called `rss-parser`. You can find the packa
 
 The RSS feed for my website can be found on the following URL: https://daily-dev-tips.com/sitemap.xml
 
-Open your `index.js` file in your favourite editor and place the following code in it.
+Open your `index.js` file in your favorite editor and place the following code in it.
 
 ```js
 let Parser = require('rss-parser');
@@ -85,7 +85,7 @@ let Parser = require('rss-parser');
 let parser = new Parser();
 ```
 
-The first line tells `node.js` we are going to use the rss-parser package.
+The first line tells `node.js` we will use the rss-parser package.
 The second line defines a new parser.
 
 ```js
@@ -101,7 +101,7 @@ console.log(feed.title);
 ```
 
 Here we tell the rss-parser package to parse a new XML feed from my website's feed URL.
-Next we console log the feed's title.
+Next, we console log the feed's title.
 
 ```js
 feed.items.forEach((item) => {
