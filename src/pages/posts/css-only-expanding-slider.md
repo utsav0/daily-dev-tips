@@ -9,7 +9,7 @@ tags:
   - css
 ---
 
-Sliders are fantastic, a welcome addition to every website, but sometimes can become very complicated with text flying in and images animating from all sides.
+Sliders are a fantastic addition to every website, but sometimes can become very complicated with text flying in and images animating from all sides.
 
 Let's say we want a simple expandable slider. We can achieve this with just `css`; you heard me right, CSS only!
 
@@ -51,7 +51,7 @@ For our `HTML` we are going to use the following setup:
 </div>
 ```
 
-Nothing fancy, a container (optional) and a slider `div` with five slides `divs` inside. Each slide contains an image in this case.
+Nothing fancy, a container (optional) and a slider `div` with five slides `divs` inside. Each slide contains an image, in this case.
 
 Now for the CSS, we use the following:
 
@@ -95,7 +95,7 @@ We give the container `display: flex` and align everything horizontal and vertic
 
 Once you hover on the slide, we set the `flex` to 5, which will make that element bigger, and because our `transition` is in place, it will look smooth.
 
-Last we position the image inside. We make them absolutely positioned to center them better.
+Last we position the image inside. We make them positioned to center them better.
 
 We choose to align them 50% from the left and then return them -50% with transform. This will make sure the absolute positioning is entered.
 
