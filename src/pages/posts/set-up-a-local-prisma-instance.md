@@ -15,7 +15,7 @@ We will connect it with our [local setup Postgres database](https://daily-dev-ti
 Previously we already used [Prisma in a Next.js application](https://daily-dev-tips.com/posts/adding-prisma-to-a-nextjs-project/).
 
 The main goal is to have a basic node application to manage our database.
-It can create the schema and even query it with manage.
+It can create the schema and even query it.
 
 Let's set this up.
 

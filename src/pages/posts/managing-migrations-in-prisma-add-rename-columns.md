@@ -53,7 +53,7 @@ However, we'll be quickly prompted with a message this is not possible.
 
 And that is caused because Prisma does not handle renames. This makes sense as they can't identify whether we renamed a column or removed it and added a new one.
 
-To solve this use case, we can run the migration with a `-create-only` flag.
+We can run the migration with a `-create-only` flag to solve this use case.
 
 ```bash
 npx prisma migrate dev --name change_hobby_table --create-only
