@@ -10,13 +10,13 @@ tags:
   - cli
 ---
 
-Call me lazy, but I just love automating things.
+Call me lazy, but I love automating things.
 Today we are automating my morning routine.
 
 You may be wondering what that routine is.
 
 - Make coffee (Shit, we won't automate this, Yet!)
-- Open 10 tabs
+- Open ten tabs
 
 Yes, that last part we are automating using the magic and mighty `bash`!
 
@@ -43,12 +43,12 @@ Now we will be making a bash script to open all browser tabs:
 
 ```bash
 alias google-chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-while read line; do
+while reading line; do
     google-chrome --new-tab "$line"
 done < ~/www/browser-hack/list.txt
 ```
 
-I have defined the alias for google-chrome; I think on windows, you can leave the alias out (untested).
+I have defined the alias for google-chrome; I think you can leave the alias out (untested) on windows.
 
 Then we will loop through each line defined in list.txt and call google chrome to open a new tab for that website.
 
@@ -58,7 +58,7 @@ Next, we can add an alias to make it even cooler:
 alias morning=~/path/to/script/bash.sh
 ```
 
-Now in your terminal type: `morning` and see the magic happen
+Now in your terminal, type: `morning` and see the magic happen.
 
 Voila, we just hacked our morning routine to be that much quicker!
 
