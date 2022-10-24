@@ -11,11 +11,11 @@ tags:
 
 Sometimes I want to experiment and feel how powerful `CSS` these days is.
 
-So let's create something reasonably straightforward, but cool! A animated moving snake in `CSS` only.
+So let's create something reasonably straightforward but cool! An animated moving snake in `CSS` only.
 
 ## Setting up the HTML
 
-To create our snake we are going to create one main snake `div` and add some dots in this, each dot will have it's own `id` so we can animate it better.
+To create our snake, we will make one main snake, `div`, and add some dots in this. Each dot will have it's own `id` so we can animate it better.
 
 ```html
 <div class="container">

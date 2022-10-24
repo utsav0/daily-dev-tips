@@ -11,7 +11,7 @@ tags:
 
 Have you ever wondered how people get the most awesome checkboxes with custom styling?
 
-It's one of these things that are pretty hard to wrap your head around, but every developer should know.
+It's one thing that is pretty hard to wrap your head around, but every developer should know.
 
 Let me guide you into making your custom checkboxes.
 
@@ -26,13 +26,13 @@ Let me guide you into making your custom checkboxes.
 </div>
 ```
 
-To create a custom checkbox we are leveraging [`pseudo-elements`](https://daily-dev-tips.com/posts/css-pseudo-elements/) basically we can add different states to one element.
+To create a custom checkbox, we are leveraging [`pseudo-elements`](https://daily-dev-tips.com/posts/css-pseudo-elements/). We can add different states to one element.
 
 So we are using a container to center the checkbox.
-Then we create a checkbox div (just to identify we are only changing checkbox inside this div).
-And add our checkbox and label like you would normally do.
+Then we create a checkbox div (to identify, we are only changing the checkbox inside this div).
+And add our checkbox and label as you would typically do.
 
-> Note the label says `for` this must match the `id` on the checkbox.
+> Note the label says `for`. This must match the `id` on the checkbox.
 
 ## CSS Structure for custom checkboxes
 
@@ -78,7 +78,7 @@ And add our checkbox and label like you would normally do.
 }
 ```
 
-If you want to learn how we centered the container read about [the most easy center method](https://daily-dev-tips.com/posts/css-flexbox-most-easy-center-vertical-and-horizontal/).
+If you want to learn how we centered the container read about [the easiest center method](https://daily-dev-tips.com/posts/css-flexbox-most-easy-center-vertical-and-horizontal/).
 
 ```css
 .checkbox input[type='checkbox'] {
@@ -90,8 +90,8 @@ If you want to learn how we centered the container read about [the most easy cen
 }
 ```
 
-We make the checkbox inside our div opacity 0, this will hide it from the user since we won't be using it.
-And as mentioned by `svondervoort` in the comments we make the input absolute positioned so it doesn't take up any space.
+We make the checkbox inside our div opacity 0. This will hide it from the user since we won't be using it.
+And as mentioned by `svondervoort` in the comments, we make the input absolute positioned, so it doesn't take up any space.
 We then set the width and height to 0 and the `z-index: -1` to hide it even more.
 
 ```css
@@ -103,9 +103,9 @@ We then set the width and height to 0 and the `z-index: -1` to hide it even more
 }
 ```
 
-Then the label is where the magic is going to happen, where we will add the [`pseudo-element`](https://daily-dev-tips.com/posts/css-pseudo-elements/) on.
+Then the label is where the magic will happen, where we will add the [`pseudo-element`](https://daily-dev-tips.com/posts/css-pseudo-elements/) on.
 We say it must be a `relative` item (since the pseudo's will be absolute) and give it a `padding-left` of 22px (this will offset for the absolute checkbox)
-Lastly we add a `cursor: pointer;` because it is more obvious to the user they can click it.
+Lastly, we add a `cursor: pointer;` because it is more evident to the user they can click it.
 
 ```css
 .checkbox label::before {
@@ -117,11 +117,11 @@ Lastly we add a `cursor: pointer;` because it is more obvious to the user they c
 }
 ```
 
-Here we have our first [`pseudo-element`](https://daily-dev-tips.com/posts/css-pseudo-elements/) as you can see we want to add a new element `before` our label.
+Here we have our first [`pseudo-element`](https://daily-dev-tips.com/posts/css-pseudo-elements/). As you can see, we want to add a new element `before` our label.
 
-> When using [`pseudo-elements`](https://daily-dev-tips.com/posts/css-pseudo-elements/) they only show if you give them content! (This is how we hide the checkmark
+> When using [`pseudo-elements`](https://daily-dev-tips.com/posts/css-pseudo-elements/), they only show if you give them content! (This is how we hide the checkmark
 
-Then we give it a width and height and border and we have the outline for our new checkbox.
+Then we give it a width, height, and border and have the outline for our new checkbox.
 
 ```css
 .checkbox label::before,
@@ -147,7 +147,7 @@ We set the before and after element to be absolute and start at position 0 from 
 }
 ```
 
-The after [`pseudo-element`](https://daily-dev-tips.com/posts/css-pseudo-elements/) is going to be the checkmark icon.
+The after [`pseudo-element`](https://daily-dev-tips.com/posts/css-pseudo-elements/) will be the checkmark icon.
 We make it with css by using border graphics.
 And position it 4px from the top and left to center it in our checkbox holder.
 
