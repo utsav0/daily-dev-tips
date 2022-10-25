@@ -22,7 +22,8 @@ Let's see how to use it:
 
 ```html
 <label for="looney"
-  ><input list="looneys" name="looneys" id="looney" /> is my favorite Looney Tune!</label
+  ><input list="looneys" name="looneys" id="looney" /> is my favorite Looney
+  Tune!</label
 >
 
 <datalist id="looneys">
@@ -47,7 +48,7 @@ Wow, that is all! Amazing right?
 We need to define `list=""` on our input, and then we can define a `datalist` with the same `id` as the `list`.
 
 This will generate an input with autocomplete functionality.
-It's basically a better select element.
+It's a better select element.
 
 You can view it in action on this Codepen.
 
@@ -64,7 +65,7 @@ It can not replace a select fully, so people will be able to type whatever they 
 
 ## Browser Support
 
-I'm pretty surprised how well it is supported. We can even find a [polyfill](https://github.com/mfranzke/datalist-polyfill) for IE9\<.
+I'm pretty surprised at how well it is supported. We can even find a [polyfill](https://github.com/mfranzke/datalist-polyfill) for IE9\<.
 
 ![Datalist support](https://caniuse.bitsofco.de/static/v1/mdn-html__elements__datalist-1593006288777.png)
 

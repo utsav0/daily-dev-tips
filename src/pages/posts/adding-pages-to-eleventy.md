@@ -11,13 +11,13 @@ tags:
 
 Someone made an excellent comment recently that an about page would benefit my blog quite a bit.
 
-So why not explore how to add static pages to our dynamic created blog at the same time.
+So why not simultaneously explore how to add static pages to our dynamic-created blog?
 
-We are going to create a static about page, which is going to sit on the URL `/about`.
+We will create a static about page, which will sit on the URL `/about`.
 
 ## Adding the About page
 
-Create a `about.njk` file in the root at the same level as the `index.njk` and insert the following code:
+Create an `about.njk` file in the root at the same level as the `index.njk` and insert the following code:
 
 ```html
 ---
@@ -30,20 +30,20 @@ permalink: /about/
 <h1>Hello world, I'm Chris! 🤟</h1>
 
 <p>
-  I'm Chris Bongers a webdeveloper, solution architect, blogger and lover of a
-  beatiful girlfriend and dog.
+  I'm Chris Bongers a web developer, solution architect, blogger, and lover of a
+  beautiful wife and dog.
 </p>
 <p></p>
 <p>
   I come from a mixed background being a full stack WordPress developer, a PHP
-  Symfony developer and just your good old fullstack dev.
+  Symfony developer and just your good old full-stack dev.
 </p>
 <p>
-  On the web I just love beatiful things, they must look amazing, be blazing
-  fast and innovative.
+  On the web, I love beautiful things. They must look amazing, be blazing fast,
+  and be innovative.
 </p>
 <p>
-  I currently live in Cape Town, South Africa 🇿🇦 but my roots are in The
+  I currently live in Cape Town, South Africa 🇿🇦, but my roots are in The The
   Netherlands 🇳🇱.
 </p>
 <br />
@@ -60,7 +60,7 @@ permalink: /about/
 </p>
 ```
 
-Here you see we set the layout to a new layout, and add a permalink to `/about/` this will actually create a `about` folder with a `index.html` inside of it.
+Here, we set the layout to a new one and added a permalink to `/about/`. This will create an `about` folder with an `index.html`.
 
 Then we add an image and some text.
 
@@ -68,7 +68,7 @@ Then we add an image and some text.
 
 The image we just added won't work by default. We have to tell Eleventy to put it in our output folder.
 
-We can add a `.eleventy` file in our root, and let's add the following code in it.
+We can add a `.eleventy` file in our root, and let's add the following code.
 
 ```js
 module.exports = function (eleventyConfig) {
@@ -77,9 +77,9 @@ module.exports = function (eleventyConfig) {
 };
 ```
 
-Here we can change the default Eleventy settings; in this case, we say it must just the `addPassthroughCopy` function to add the `img` folder to our output.
+Here we can change the default Eleventy settings; in this case, we say it must just be the `addPassthroughCopy` function to add the `img` folder to our output.
 
-That being said, create the `img` folder in the root of our website and add your profile image in it as we set in the `about.njk` page!
+That being said, create the `img` folder in the root of our website and add your profile image in it as we set it in the `about.njk` page!
 
 ## The About template
 
@@ -102,9 +102,9 @@ As we saw in [building a static blog with 11ty](https://daily-dev-tips.com/posts
 npx eleventy --serve
 ```
 
-The open up [http://localhost:8080](http://localhost:8080) to see what we got!
+Open up [http://localhost:8080](http://localhost:8080) to see what we got!
 
-To deploy to Netlify we can use our learnings from [Hosting on Netlify](https://daily-dev-tips.com/posts/hosting-a-static-blog-on-netlify/) and push to our git master branch.
+To deploy to Netlify, we can use our learnings from [Hosting on Netlify](https://daily-dev-tips.com/posts/hosting-a-static-blog-on-netlify/) and push them to our git main branch.
 
 You can find this code in the following [GitHub repo](https://github.com/rebelchris/eleventy-demo/releases/tag/2.0), or view it online on [this link](https://romantic-torvalds-af350e.netlify.app/about/).
 
