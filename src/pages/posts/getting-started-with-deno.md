@@ -78,7 +78,7 @@ for await (const req of server) {
 ```
 
 So this is a bit different than what we see in `node.js`.
-We loop through each incoming request, and we are returning a body for each request!
+We loop through each incoming request, returning a body for each request!
 
 ## Running Our Deno Server
 

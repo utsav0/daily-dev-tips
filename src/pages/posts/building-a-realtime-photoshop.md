@@ -188,7 +188,7 @@ So let's address this and add the filters to our Image.
 
 Wow! Massive code-block, but you can only have one filter element, so we "chain" the filters after each other!
 
-Ok, cool, we now set all the filters on our image, but nothing changed?
+Ok, cool, we now set all the filters on our image, but nothing changed.
 
 Correct! These are all the default values of each filter, so let's add some `JavaScript` to make the sliders affect our variables.
 
