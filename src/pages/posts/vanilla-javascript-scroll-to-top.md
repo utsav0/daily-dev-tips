@@ -13,7 +13,7 @@ In today's tutorial, we will learn **how to scroll to the top** of a page in `Va
 
 So let's code a `JavaScript` powered scroll to top function.
 
-We will create a button that will sit at the right bottom of the page. Once we click it, it will take us **back to the top** of the page with a smooth scroll.
+We will create a button that will sit at the bottom right of the page. Once we click it, it will take us **back to the top** of the page with a smooth scroll.
 
 > Also view my article about a [plain HTML scroll to top](https://daily-dev-tips.com/posts/plain-html-scroll-to-top/)
 
