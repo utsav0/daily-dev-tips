@@ -9,10 +9,10 @@ tags:
   - firefox
 ---
 
-Something my default browser Chrome doesn't have is a cool clip-path editor.
+Something my default browser Chrome doesn't have is a fantastic clip-path editor.
 Something Firefox does come with, and it can be super helpful to guide you through making cool shapes with clip-path CSS.
 
-The tool can be used to create new clip-paths from scratch or modify existing ones.
+The tool can create new clip paths from scratch or modify existing ones.
 
 It looks like this:
 
@@ -20,19 +20,19 @@ It looks like this:
 
 ## Firefox clip-path editor
 
-To find the clip-path editor we simply have to open the developer tools:
+To find the clip-path editor, we have to open the developer tools:
 
 - **Mac**: `Shift` + `⌘` + `J`
 - **Windows/Linux**: `Shift` + `CTRL` + `J`
 
-Then you can inspect an element that has a clip-path and click the little square image.
+Then you can inspect an element with a clip path and click the little square image.
 This will highlight the clipping points on your element.
 
 ![Firefox finding the clip-path editor](https://cdn.hashnode.com/res/hashnode/image/upload/v1608659804268/iVrS_29uP.gif)
 
 ## Firefox adding a new clip-path
 
-The editor can not only edit existing clip-paths but also create ones from scratch which can be helpful!
+The editor can not only edit existing clip paths but also create ones from scratch, which can be helpful!
 
 To do so, click the element and add the clip-path code to it.
 
@@ -41,7 +41,7 @@ To do so, click the element and add the clip-path code to it.
   <source src="https://res.cloudinary.com/daily-dev-tips/video/upload/q_auto/clip_kh41nu.mp4" type="video/mp4" />
 </video>
 
-As you can see it can be super useful to generate or modify clip-path.
+As you can see, generating or modifying a clip-path can be super helpful.
 
 Let's hope Chrome decides to build this in soon!
 

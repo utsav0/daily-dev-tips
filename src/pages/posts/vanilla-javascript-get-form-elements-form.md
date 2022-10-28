@@ -15,13 +15,13 @@ We could use [`closest()`](https://daily-dev-tips.com/posts/vanilla-javascript-c
 
 We can use the `.form` on these elements.
 
-To demonstrate I'm going to showcase two fairly common use cases
+To demonstrate, I'm going to showcase two fairly common use cases.
 
 ## 1. You know the input based on its ID
 
-A very common use-case is that we know the ID of a input, and want to get its form.
+A common use case is that we know the input ID and want to get its form.
 
-Let's say this is our `HTML` structure
+Let's say this is our `HTML` structure.
 
 ```html
 <form>
@@ -33,7 +33,7 @@ Let's say this is our `HTML` structure
 </form>
 ```
 
-Now if we want to get the form element the `#myInput` belongs to we can do this:
+Now, if we want to get the form element the `#myInput` belongs to, we can do this:
 
 ```js
 const input = document.getElementById('myInput');
@@ -49,7 +49,7 @@ This return the following:
 
 On the other side, you might find you need the form based on an element changing.
 
-So in the case of our select each time it changes we want to get the form it belongs to.
+So in the case of our select, each time it changes, we want to get the form it belongs to.
 
 ```js
 findForm = (el) => {
@@ -69,9 +69,9 @@ Find this full demo on this Codepen.
 </p>
 <script async defer src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-You might ask when you need this?
+You might ask when you need this.
 
-Let's say if the fields change you want to validate the whole form.
+If the fields change, you want to validate the whole form.
 Or you need to do a lookup for another field to make sure those match.
 
 A lot of options come to mind.
