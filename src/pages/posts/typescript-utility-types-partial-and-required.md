@@ -55,7 +55,7 @@ updateUserField(1, {
 });
 ```
 
-This is now a valid code. However, if you would remove the `Partial` utility, you would see it throws some TypeScript errors about the missing fields.
+This is now a valid code. However, if you remove the `Partial` utility, you will see it throws some TypeScript errors about the missing fields.
 
 ![TypeScript missing fields error](https://cdn.hashnode.com/res/hashnode/image/upload/v1644471472591/gFt2W94iA.png)
 

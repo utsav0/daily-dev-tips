@@ -18,7 +18,7 @@ const getFullName = (user: { firstname: string, lastname: string }): string => {
 };
 ```
 
-Not that anything is wrong with this, but let's say we need to use this user object again in a `saveUser` function?
+Nothing is wrong with this, but let's say we need to use this user object again in a `saveUser` function.
 
 Then we have to copy-paste this same declaration piece all over the place.
 
@@ -137,7 +137,7 @@ type User = {
 // Duplicate identifier User
 ```
 
-## So which one to pick?
+## So, which one to pick?
 
 It mainly comes down to preference. If you don't have one, stick to the interface until you might need something specific to a type.
 
