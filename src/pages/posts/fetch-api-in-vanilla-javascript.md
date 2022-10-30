@@ -9,7 +9,7 @@ tags:
   - javascript
 ---
 
-I remember back in the days of jQuery `$.ajax` was a big, big thing. But nowadays we have `fetch` a way cooler, faster solution to fetch data from an API endpoint. It is the better alternative to XHR and AJAX.
+I remember back in the days of jQuery `$.ajax` was a big, big thing. But nowadays, we have `fetch` a way cooler, faster solution to fetch data from an API endpoint. It is the better alternative to XHR and AJAX.
 The best part: the Fetch API request works in `Vanilla JavaScript`!
 
 ## How to make a GET request with the Fetch API
@@ -18,14 +18,14 @@ The best part: the Fetch API request works in `Vanilla JavaScript`!
 fetch('https://api.fungenerators.com/fact/random');
 ```
 
-That is as basic as it gets, won't do much since we are not returning any data.
+That is as basic as it gets. It won't do much since we are not returning any data.
 
 ### Returning json data with the Fetch API
 
 ```js
 fetch('https://ghibliapi.herokuapp.com/films')
   .then(function (response) {
-    // Successfull fetch return as json
+    // Successful fetch return as json
     return response.json();
   })
   .then(function (data) {
@@ -33,7 +33,7 @@ fetch('https://ghibliapi.herokuapp.com/films')
     console.log(data[0]);
   })
   .catch(function (error) {
-    // A Error occured
+    // A Error occurred
     console.log(error);
   });
 ```
@@ -42,7 +42,7 @@ Vanilla JS Fetch works with promises, so we can return a promise chain as we lea
 
 The first API response will return an object, not an actual response, so we need to tell the promise that we want to return the response as JSON data.
 
-You can play around with this codepen.
+You can play around with this CodePen.
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="rebelchris" data-slug-hash="abOXqoV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Fetch API in Vanilla JavaScript">
   <span>See the Pen <a href="https://codepen.io/rebelchris/pen/abOXqoV">

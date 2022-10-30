@@ -95,7 +95,7 @@ Inside it is an `h1` tag with a `span`. This `span` has five other `spans` with 
 }
 ```
 
-So what's happening here. Let's see item per item.
+So what's happening here? Let's see item per item.
 
 ```css
 .rotator-wrapper {
@@ -126,7 +126,7 @@ We give the main `span` inside a minimum width to keep inline centered.
 }
 ```
 
-Then every rotating word we make `position: absolute;` and invisible from the start.
+Then every rotating word, we make `position: absolute;` and invisible from the start.
 We then add our `rotateWord` animation.
 
 ```css
@@ -135,7 +135,7 @@ We then add our `rotateWord` animation.
 }
 ```
 
-Every child after we increase the `animation-delay` by 3 seconds.
+For every child, we increase the `animation-delay` by 3 seconds.
 
 ```css
 @keyframes rotateWord {
