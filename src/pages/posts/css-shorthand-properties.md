@@ -14,7 +14,7 @@ These are quick one-lines instead of writing multiple lines of `CSS` that do the
 
 ## CSS Background shorthand
 
-So let's start with the background property, we can write code like this:
+So let's start with the background property. We can write code like this:
 
 ```css
 .background {
@@ -26,7 +26,7 @@ So let's start with the background property, we can write code like this:
 }
 ```
 
-Or we can write the shorthand as follows to do the exact same:
+Or we can write the shorthand as follows to do the same:
 
 ```css
 .background {
@@ -36,7 +36,7 @@ Or we can write the shorthand as follows to do the exact same:
 }
 ```
 
-As you can see, this is way fewer lines of `CSS`.
+As you can see, there are fewer lines of `CSS`.
 
 The order of the shorthand is: `background: background-color | background-image | background-repeat | background-attachment | background-position`.
 
@@ -55,7 +55,7 @@ We can also use the shorthand for `Fonts`, so the following:
 }
 ```
 
-We can make into a shorthand like:
+We can make it into a shorthand like:
 
 ```css
 .font {
