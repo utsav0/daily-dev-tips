@@ -20,16 +20,16 @@ You can check the countries where Google Analytics is illegal here: [isgoogleana
 I was a big user of Google Analytics because it works and it's easy, but I knew it wasn't right.
 And I was getting more and more annoyed by the fact that Google was benefiting so much from the data of people I was trying to help.
 
-It was not worth having such a useless vanity metric on Google when there are so many great and privacy-focused alternatives.
+It was not worth having such a useless vanity metric on Google when there are many great and privacy-focused alternatives.
 
-In this article, I'll go over some alternatives you can use instead of Google Analytics.
+In this article, I'll review alternatives you can use instead of Google Analytics.
 
 ## No more analytics
 
 You could opt to have no more analytics if you are not using it.
-This would even help speed up your website as you don't need to load any of the tracking scripts.
+This would even help speed up your website as you don't need to load any tracking scripts.
 
-However, many of us like to do analytics on which pages perform well and how people are using our website.
+However, many of us like analytics on which pages perform well and how people use our website.
 
 ## Wide Angle Analytics
 
@@ -37,7 +37,7 @@ Wide Angle Analytics is web analytics Made in Germany and fully hosted in the EU
 
 One of the few SaaS web analytics platforms that support cookieless and cookie-enabled tracking explicitly allows the processing of Personal Data.
 
-Easy to start, with bold design and colours.
+Easy to start, with bold design and colors.
 
 The basic plan starts from €9.99pcm or €99pa and goes up depending on your needs.
 
@@ -45,28 +45,28 @@ The basic plan starts from €9.99pcm or €99pa and goes up depending on your n
 
 ## Cloudflare Analytics
 
-I started by using this. However, it quickly turned out to not be ideal as they have only a 30 day retention period.
+I started by using this. However, it quickly turned out not to be ideal as they have only a 30-day retention period.
 
 So your data will only be valid for 30 days, which is not enough for most people.
 
 It does work super well, and if you are hosting on Cloudflare pages, it will even be injected by them to optimize the load.
 
-I won't go into more details for Cloudflare as this is such a deal-breaker for most people.
+I won't go into more details for Cloudflare as this is a deal-breaker for most people.
 
 ## Matomo
 
-Matomo is an open-source alternative to Google Analytics. They have quite a community behind it.
+Matomo is an open-source alternative to Google Analytics. They have quite a community behind them.
 And a promise to be free forever!
 
 You might know it by its former name, "Piwik, " one of the first open-sourced big analytics systems.
 
 They allow you to self-host it for free. This will, of course, mean you'll need a server of your own.
 
-They offer paid options you can add on, and they have quite a few of them!
+They offer paid options you can add on, and they have quite a few!
 
 Alternatively, you can choose a hosted solution starting at 19EUR per month.
 
-When using the hosted solution, the cool thing is that you get all their plugins included.
+The cool thing about using the hosted solution is that you get all their plugins included.
 
 And a big win for them is that they provide a Google Analytics data importer.
 
@@ -96,9 +96,9 @@ Or
 
 This tool is built from a legal/privacy standpoint and has a law firm specializing in data protection to validate all they do.
 
-If you are looking for the best data protection tool, this could be for you.
+This could be for you if you are looking for the best data protection tool.
 
-They only have early-bird pricing, so this might change in the near future.
+They only have early-bird pricing, so this might change soon.
 
 Pricing starts at 1,99EUR a month.
 
@@ -138,15 +138,15 @@ Or
 
 ## Plausible
 
-My choices were narrowed down between Plausible and Fathom, they have a lot of social proof behind them, and both do a lot of things great.
+My choices were narrowed down between Plausible and Fathom, they have a lot of social proof behind them, and both do great things.
 
 Plausible is open source, and you can even opt to self-host it.
 
 It's a two-person team, and the story behind the product is inspiring.
 
-It's not the cheapest product, but you have to realize you are paying for your data to be respected.
+It's not the cheapest product, but you must realize you are paying for your data to be respected.
 
-Pricing as low as £90 a year.
+Pricing is as low as £90 a year.
 
 [Check out Plausible](https://plausible.io/)
 

@@ -93,7 +93,7 @@ We can find our recent push deployment in the following section in Azure.
 
 ![Azure Deployment Center](https://cdn.hashnode.com/res/hashnode/image/upload/v1600706012450/OMK-7aBvo.png)
 
-There we go, we created a Node app hosted on Azure Web Services.
+There we go. We created a Node app hosted on Azure Web Services.
 
 You can find the entire project on my [GitHub](https://github.com/rebelchris/Node-url-shortener)
 
