@@ -11,9 +11,9 @@ tags:
 
 You might find yourself in a situation where certain keypresses might do something for your application or game.
 
-Today we'll be looking at how we can detect which key is pressed in JavaScript.
+Today we'll be looking at detecting which key is pressed in JavaScript.
 
-The end result is this cool little playground:
+The result is this cool little playground:
 
 ![JavaScript detect keypress](https://cdn.hashnode.com/res/hashnode/image/upload/v1617951849345/d-f651Yu_.gif)
 
@@ -28,23 +28,23 @@ document.onkeydown = function (e) {
 };
 ```
 
-This will log all key down events, which is what we are looking for.
+This will log all key-down events, which is what we are looking for.
 
-The `e` variable will contain the actual KeyBoardEvent, and it has quite the information inside.
+The `e` variable will contain the actual KeyBoardEvent and has quite the information inside.
 
 ![KeyBoardEvent log](https://cdn.hashnode.com/res/hashnode/image/upload/v1617950084879/qhTg11Mu-.png)
 
-There are a couple things we can use that are helpful in there.
+There are a couple of things we can use that are helpful in there.
 
 - key: A string representation of the key pressed
 - keyCode: The number associated with the key. This is mainly used to identify keys in code
 - code: A combination to identify which side a key was pressed (leftMeta/rightMeta)
 
-Knowing that, let's make a cool visual tool that will output these three elements for the user.
+Knowing that, let's make an excellent visual tool that will output these three elements for the user.
 
 ## HTML Structure
 
-I'm going to be using Tailwind to make a quick styled application, the main setup will be:
+I'm going to be using Tailwind to make a quick styled application. The main setup will be:
 
 ```html
 <body class="mx-auto my-auto bg-gray-100">
@@ -84,7 +84,7 @@ const key = document.getElementById('key'),
   hiddenElements = document.querySelectorAll('.hidden');
 ```
 
-This is a mix of the key information we will place and the hidden fields we need to show.
+This mixes the key information we will place and the hidden fields we need to show.
 
 Now in our keyDown function, we can act on this and place the right information.
 

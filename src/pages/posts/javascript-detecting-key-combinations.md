@@ -29,9 +29,9 @@ For instance: `metaKey` + `altKey` + `d`
 
 ## Detecting key combinations in JavaScript
 
-We don't need to change much in our existing codebase from our normal key detection example.
+We don't need to change much in our existing codebase from our standard key detection example.
 
-On the KeyBoardEvent, we get specific data, including the boolean status of the four modifiers keys.
+On the KeyBoardEvent, we get specific data, including the boolean status of the four modifier keys.
 
 Check out this example where I pressed `Shift` + `Meta` + `f`.
 
@@ -58,7 +58,7 @@ So let's first convert our HTML to have all the options available.
 </body>
 ```
 
-As you can see, I decided to add all the options and the one key, but they were all hidden at first.
+As you can see, I decided to add all the options and the one key, but they were initially all hidden.
 
 We then need to define all these variables in JavaScript.
 
@@ -109,9 +109,9 @@ keys.classList.remove('hidden');
 key.innerHTML = e.keyCode;
 ```
 
-The above section will show or hide the modifier keys, and eventually, we will also add the specific key.
+The above section will show or hide the modifier keys, and we will eventually add the specific key.
 
-You might see in the demo below that it will show up as a weird character if you have certain combinations. The key code, however, will always be the same!
+You might see in the demo below that it will appear as a weird character if you have certain combinations. The key code, however, will always be the same!
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="rebelchris" data-slug-hash="NWdYgbQ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript detecting key combinations">
   <span>See the Pen <a href="https://codepen.io/rebelchris/pen/NWdYgbQ">
