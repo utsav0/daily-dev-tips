@@ -9,7 +9,7 @@ tags:
   - javascript
 ---
 
-I recently needed to **remove all HTML tags** from the text content of my application to return the clean text.
+I recently needed to **remove all HTML tags** from the text content of my application to return clean text.
 
 In this case, it was to share a **plain text** version for meta descriptions. It can also be used for several other outputs.
 
@@ -64,7 +64,7 @@ This will result in:
 Some more content here'
 ```
 
-As you can see, we removed the heading, paragraph, break and image.
+As you can see, we removed the heading, paragraph, break, and image.
 This is because we escape all HTML brackets with `< >` format.
 
 It could be breached by something silly like:

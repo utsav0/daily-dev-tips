@@ -9,15 +9,15 @@ tags:
   - css
 ---
 
-Let's talk about **placeholders**. They are a wonderful addition to form elements.
+Let's talk about **placeholders**. They are an excellent addition to form elements.
 
-Today we won't be talking about them as accessibility issues and hazards, but just about how to style the inputs that have them.
+Today we won't be talking about them as accessibility issues and hazards but how to style the inputs that have them.
 
 We can style the actual placeholder text in CSS using the `::placeholder` pseudo-element.
 
-But did you know there is also a pseudo-class called `:placeholder-shown`? It will select the actual input field and style that we can all of a sudden add borders and other styles!
+But did you know there is also a pseudo-class called `:placeholder-shown`? It will select the actual input field and style so we can all of a sudden add borders and other styles!
 
-Our result will be an input field that is styled based on the placeholder is shown. Once we type text into it the placeholder styling should be removed.
+Our result will be a styled input field based on the placeholder shown. Once we type text into it, the placeholder styling should be removed.
 
 ![CSS placeholder-shown](https://cdn.hashnode.com/res/hashnode/image/upload/v1605677501390/gfG0zuBTl.gif)
 
@@ -65,7 +65,7 @@ By running this, we will get a basic form that will look like the image below.
 
 ![CSS Basic form](https://cdn.hashnode.com/res/hashnode/image/upload/v1605677040414/DvgCDvkYx.png)
 
-How can we make the text field where the placeholder is active render differently? - We use the placeholder-shown pseudo-class like this:
+How can we render the text field where the placeholder is active differently? - We use the placeholder-shown pseudo-class like this:
 
 ```css
 .container input:placeholder-shown {
