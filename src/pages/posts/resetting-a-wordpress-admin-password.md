@@ -11,7 +11,7 @@ tags:
 
 I'm not particularly eager to work on WordPress, but sometimes you inherit legacy code or have to support a client.
 
-The worst thing is where you get access to the database, but nobody knows the login anymore.
+The worst thing is when you get access to the database, but nobody knows the login anymore.
 
 So how do we go about changing the admin's password?
 
