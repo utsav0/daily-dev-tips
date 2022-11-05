@@ -106,7 +106,7 @@ And now we got our working animated border in CSS!
 
 ## Browser Support
 
-For browser support, we have to look at multiple properties technically. Still, this one below should give you an excellent example of how good the support is.
+For browser support, we have to look at multiple properties technically. Still, the one below should give you an excellent example of the support.
 
 <picture>
 <source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/border-image-1637493765759.webp" />
