@@ -9,9 +9,9 @@ tags:
   - mac
 ---
 
-If you are on Mac and needed to install some kind of package or software the changes you came across Homebrew are about 99%.
+If you are on Mac and need to install some package or software, the changes you came across Homebrew are about 99%.
 
-[Homebrew](https://brew.sh/) is a package manager for Mac, it makes it easy to install different software. Or even different versions of for instance PHP.
+[Homebrew](https://brew.sh/) is a package manager for Mac. It makes it easy to install different software. Or even different versions of, for instance, PHP.
 
 You use homebrew in your terminal, my [favorite terminal is iTerm2](https://daily-dev-tips.com/posts/getting-started-with-the-terminal/).
 
@@ -31,7 +31,7 @@ That will install the latest version of homebrew.
 
 ## Using homebrew
 
-To use homebrew you can again open your terminal and run `brew` commands.
+To use homebrew, you can again open your terminal and run `brew` commands.
 
 A list of useful commands:
 
@@ -46,15 +46,15 @@ A list of useful commands:
 
 ## Installing specific packages
 
-To install specific packages we can generally follow the following guide.
+To install specific packages, we can generally follow the following guide.
 
-> Note: this example uses httpd as the package, you can find all [homebrew formulae's here](https://formulae.brew.sh/)
+> Note: this example uses httpd as the package. You can find all [homebrew formulae here](https://formulae.brew.sh/)
 
 1. `brew install httpd`
 
-Done... Literally, just that one command will install httpd and everything it needs.
+Done... Just that one command will install httpd and everything it needs.
 
-In this case, since it's a service we can use homebrew to start it.
+Since it's a service, we can use homebrew to start it.
 
 ```bash
 brew services start httpd
