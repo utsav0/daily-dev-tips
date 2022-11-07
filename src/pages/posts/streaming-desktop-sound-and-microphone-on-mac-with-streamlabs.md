@@ -25,7 +25,7 @@ Prerequisite:
 
 ## Install BlackHole
 
-Mac does not have a system virtual audio driver, unlike Windows, so we need some help from a third party.
+Mac does not have a system virtual audio driver, unlike Windows, so we need help from a third party.
 
 After doing some research, BlackHole seems to be the best in the field, and after using it, I can confirm it's super easy!
 
@@ -41,7 +41,7 @@ Once BlackHole is installed, we can set up our new Multi-Output device.
 
 As the name suggests, this new virtual device will output two audio sources.
 
-Open up the "Audio MIDI Setup" app to set up new audio sources. The quickest way is to use the Spotlight search.
+Open the "Audio MIDI Setup" app to set up new audio sources. The quickest way is to use the Spotlight search.
 
 Click on the plus at the left bottom of the app, and select "Create Multi-Output device".
 
@@ -60,7 +60,7 @@ It should now show the speaker icon playing on this channel.
 
 ## Allowing the desktop sound as output in Streamlabs
 
-Now, we need to change Streamlabs to allow the audio to be output correctly.
+We need to change Streamlabs to allow the audio to be output correctly.
 
 Open up Streamlabs and visit the settings menu.
 
@@ -70,7 +70,7 @@ Click the audio menu, and set a second Mic/Auxiliary device to the BlackHole 2ch
 
 Now your stream will be capturing your microphone input and the desktop output.
 
-You can hear a demo on this Twitch stream I did, wherein you should listen to some soft LoFI beats in the background.
+You can hear a demo on my Twitch stream, wherein you should listen to some soft LoFI beats in the background.
 
 [Example video](https://www.youtube.com/watch?v=7fCEenL3kHU)
 
