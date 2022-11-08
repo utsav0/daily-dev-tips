@@ -11,19 +11,19 @@ tags:
 
 I have quite an intriguing background in the TTS (Text-to-speech) field. It always caught my eye.
 
-Back in my school period, my projects would always involve either some kind of TTS or webcam interaction.
+Back in school, my projects always involved some TTS or webcam interaction.
 
-Now those were always super cool but couldn't really be of any use in most websites.
+Those were always super cool but couldn't be used on most websites.
 
-Yeah, it looks cool, but when do you really need it.
+Yeah, it looks cool, but when do you need it?
 
-Another side to TTS is that it was very hard to use. You needed a vast amount of plugins or third-party parses.
+Another side to TTS is that it was tough to use. You needed a vast amount of plugins or third-party parses.
 
 These days we are a bit luckier with how powerful JavaScript has become.
 
 So today, I wanted to have another look at Text to speech in JavaScript.
 
-The end result for today: Try it out on the following Codepen.
+**The result for today**: Try it out on Codepen.
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="rebelchris" data-slug-hash="wvzWmep" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vanilla JavaScript text-to-speech 💬">
   <span>See the Pen <a href="https://codepen.io/rebelchris/pen/wvzWmep">
@@ -36,10 +36,10 @@ The end result for today: Try it out on the following Codepen.
 
 We can leverage the Web Speech API, which uses the SpeechSynthesis interface.
 
-To have our computer talk to us, we must then make use of the `SpeechSynthesisUtterance` interface.
-This basically translates to: speech request.
+To have our computer talk to us, we must then use the `SpeechSynthesisUtterance` interface.
+This translates to: speech request.
 
-In this interface, we define the voice, language, and volume.
+In this interface, we define voice, language, and volume.
 
 It comes with the following elements:
 
@@ -52,7 +52,7 @@ It comes with the following elements:
 
 ## Detecting browser support
 
-Since this method is not fully supported by all browsers, we will need to detect if our browser has this option.
+Since not all browsers fully support this method, we will need to detect if our browser has this option.
 
 ```js
 const SpeechSynthesisUtterance =
@@ -65,7 +65,7 @@ const SpeechSynthesisUtterance =
 
 Here we define a const to check if the support is defined.
 
-We can then easily check this const.
+We can then quickly check this const.
 
 ```js
 if (SpeechSynthesisUtterance !== undefined) {
@@ -79,7 +79,7 @@ if (SpeechSynthesisUtterance !== undefined) {
 
 I don't know about you, but I love to play around with any device's voice options.
 
-If it's my Google Home, or something like the Speech API.
+Wheter it's my Google Home or something like the Speech API.
 
 The cool part about the Web Speech API is that we can query all available voices.
 
@@ -89,13 +89,13 @@ console.log(voices);
 // []
 ```
 
-Now running this will likely result in a empty result, so another cool thing the API comes with is a callback for once the voices are loaded:
+Now running this will likely result in an empty result, so another cool thing the API comes with is a callback once the voices are loaded:
 
 ```js
 window.speechSynthesis.onvoiceschanged = () => {
   const voices = window.speechSynthesis.getVoices();
   console.log(voices);
-  // (67) [SpeechSynthesisVoice, SpeechSynthesisVoice, ...]
+  // (67) [SpeechSynthesisVoice, SpeechSynthesisVoice, ...]
 };
 ```
 
@@ -123,7 +123,7 @@ if (SpeechSynthesisUtterance !== undefined) {
 }
 ```
 
-We should now have a select list that is populated with all the available voices.
+We should now have a select list populated with all the available voices.
 
 ![JavaScript speech voice select](https://cdn.hashnode.com/res/hashnode/image/upload/v1607410751016/BX67CW59S.png)
 
@@ -177,8 +177,8 @@ Press the speak button, and you should hear some spoken words!
 
 ## Browser Support
 
-Again, pretty good coverage for a fairly new API.
-Of course, IE is a pain like always, and mobile Opera and Android have some issues with it.
+Again, pretty good coverage for a reasonably new API.
+Of course, IE is a pain, and mobile Opera and Android have some issues.
 
 ![JavaScript text to speech browser support](https://caniuse.bitsofco.de/static/v1/mdn-api__SpeechSynthesisUtterance-1607412204741.png)
 

@@ -10,14 +10,14 @@ tags:
   - javascript
 ---
 
-As a developer, you write code (duh), but this code might be outdated in one, three, five years.
+You write code (duh) as a developer, but this code might be outdated in one, three, or five years.
 
 I think it's our responsibility to maintain this code if the budget allows it.
 
-In this case, the code has been written by my colleague pre ES6 times.
+In this case, the code has been written by my colleague pre-ES6 times.
 I'm now asked to write an extension on this codebase.
 
-When looking at the old code, I noted there was some legacy code that was using loops and wasn't really efficient with the tools we have nowadays.
+When looking at the old code, I noted some legacy code using loops and wasn't efficient with the current tools.
 
 ## Introducing the old code
 
@@ -30,9 +30,16 @@ const data = {
   Vue: 2,
   Next: 1,
   HTML: 2,
-  Other: 3
+  Other: 3,
 };
-const colors = ['#d17a29', '#da9554', '#e3af7f', '#edcaa9', '#f6e4d4', '#204e77'];
+const colors = [
+  '#d17a29',
+  '#da9554',
+  '#e3af7f',
+  '#edcaa9',
+  '#f6e4d4',
+  '#204e77',
+];
 ```
 
 The goal is to get an output like this:
@@ -44,7 +51,7 @@ The goal is to get an output like this:
   ['Vue', 2, '#e3af7f'],
   ['HTML', 2, '#f6e4d4'],
   ['React', 1, '#da9554'],
-  ['Next', 1, '#edcaa9']
+  ['Next', 1, '#edcaa9'],
 ];
 ```
 
@@ -59,12 +66,12 @@ for (let temp in data) {
   index++;
 }
 
-sortable.sort(function(a, b) {
+sortable.sort(function (a, b) {
   return b[1] - a[1];
 });
 ```
 
-The person achieved the exact goal, using a loop and manual plus on an index. Perfect solution, but perhaps we can make it even better?
+The person achieved the same goal, using a loop and manual plus on an index. Perfect solution, but perhaps we can make it even better?
 
 ## Refactoring the code
 
@@ -81,10 +88,17 @@ const newOutput = Object.entries(data);
 This will give us the following array.
 
 ```js
-[['Angular', 3], ['React', 1], ['Vue', 2], ['Next', 1], ['HTML', 2], ['Other', 3]];
+[
+  ['Angular', 3],
+  ['React', 1],
+  ['Vue', 2],
+  ['Next', 1],
+  ['HTML', 2],
+  ['Other', 3],
+];
 ```
 
-Wow, that already halfway there, it's not sorted yet, and we are missing the color, but it's a really good start.
+Wow, that is already halfway there, it's not sorted yet, and we are missing the color, but it's a perfect start.
 
 > Note: With this, we omitted the manual push into a new array.
 
@@ -92,10 +106,10 @@ Now let's try and add the color based on an index.
 Start by adding a [Map method](https://daily-dev-tips.com/posts/javascript-map-method/) to the entries.
 
 ```js
-const newOutput = Object.entries(data).map(item => item);
+const newOutput = Object.entries(data).map((item) => item);
 ```
 
-This will return the exact same as what we had.
+This will return the same as what we had.
 But did you know we can add an index to this?
 
 ```js
@@ -120,7 +134,7 @@ You might see where this is going now, so instead of returning just the title, w
 const newOutput = Object.entries(data).map(([title, amount], index) => [
   title,
   amount,
-  colors[index] || '#fff'
+  colors[index] || '#fff',
 ]);
 ```
 
@@ -133,7 +147,7 @@ There we go. We added the color to our output.
   ['Vue', 2, '#e3af7f'],
   ['Next', 1, '#edcaa9'],
   ['HTML', 2, '#f6e4d4'],
-  ['Other', 3, '#204e77']
+  ['Other', 3, '#204e77'],
 ];
 ```
 
@@ -154,7 +168,7 @@ Let's check the output now:
   ['Vue', 2, '#e3af7f'],
   ['HTML', 2, '#f6e4d4'],
   ['React', 1, '#da9554'],
-  ['Next', 1, '#edcaa9']
+  ['Next', 1, '#edcaa9'],
 ];
 ```
 
