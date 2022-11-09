@@ -10,15 +10,15 @@ tags:
 ---
 
 Today we are creating a super cool and pretty quick `CSS` effect.
-I really love this effect. It's not super happy and can be made by just `CSS`.
+I love this effect. It's not super happy and can be made just by CSS.
 
-Because it's `CSS` based, we have the option even to animate it if we want to. (I'll leave that up to you)
+Because it's `CSS` based, we can even animate it if we want to. (I'll leave that up to you)
 
-The end result of today's article:
+The result of today's article:
 
 ![CSS Gradient effect](https://cdn.hashnode.com/res/hashnode/image/upload/v1607763331281/AMIrysxqt.png)
 
-I'll be guiding you to create this cool effect yourself, in just a couple of lines of `CSS`!
+I'll guide you through creating this excellent effect yourself in just a few lines of CSS!
 
 ## HTML Structure
 
@@ -34,7 +34,7 @@ As you can see, I've added a break (`<br />`) just because I like to showcase it
 
 Now let's move to our `CSS` setup.
 
-We'll start by styling our body, so we center our element inside the `<h1>`.
+We'll start by styling our body to center our element inside the `<h1>`.
 
 ```css
 body {
@@ -45,7 +45,7 @@ body {
 }
 ```
 
-I use [CSS Grid to center everything](https://daily-dev-tips.com/posts/css-grid-most-easy-center-vertical-and-horizontal/) perfectly.
+I use [CSS Grid to center everything](https://daily-dev-tips.com/posts/css-grid-most-easy-center-vertical-and-horizontal/) ideally.
 
 Then in my example, I'm using a black background to make it pop more.
 
@@ -59,7 +59,7 @@ h1 {
 ```
 
 We start by defining a font we like and making it nice and big.
-I'm using a `6vmax`, which is a [scalable viewport unit](https://daily-dev-tips.com/posts/how-to-work-with-css-viewport-units/).
+I'm using a `6vmax`, a [scalable viewport unit](https://daily-dev-tips.com/posts/how-to-work-with-css-viewport-units/).
 
 This results in the following:
 
@@ -78,10 +78,10 @@ h1 {
 
 As you can see, I also set a fallback color in case the gradient isn't supported.
 
-I'm using a basic [`CSS` linear gradient](https://daily-dev-tips.com/posts/css-linear-gradients/) with only two colors.
+I'm using a primary [`CSS` linear gradient](https://daily-dev-tips.com/posts/css-linear-gradients/) with only two colors.
 You can extend these to support even more colors or fancy gradients.
 
-> You can use this cool generator for [CSS gradients](https://cssgradient.io/)
+> You can use this excellent generator for [CSS gradients](https://cssgradient.io/)
 
 Our result so far is pretty weird:
 
@@ -91,9 +91,9 @@ As you can see above, the text is now black and has a gradient surrounding it. I
 
 Let's add the text gradient effect.
 
-We make use of the `background-clip` property and set the `text-fill-color` to transparent.
+We use the `background-clip` property and set the `text-fill-color` to transparent.
 
-The background-clip makes sure the gradient goes on top of the text, and the text-fill will make it pop through.
+The background-clip ensures the gradient goes on top of the text, and the text-fill will make it pop through.
 
 ```css
 h1 {
@@ -108,7 +108,7 @@ h1 {
 }
 ```
 
-Now we get this amazing result, have a look around on this Codepen.
+Now that we get this fantastic result look around on this Codepen.
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="rebelchris" data-slug-hash="eYdgOVg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="eYdgOVg">
   <span>See the Pen <a href="https://codepen.io/rebelchris/pen/eYdgOVg">
@@ -119,7 +119,7 @@ Now we get this amazing result, have a look around on this Codepen.
 
 ## Browser Support
 
-This whole setup doesn't have full support, but the elements these days are quite widely supported.
+This whole setup doesn't have full support, but the elements these days are widely supported.
 
 I've shown the background-clip since it's an important part.
 
