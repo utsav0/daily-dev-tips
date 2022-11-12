@@ -44,7 +44,7 @@ const haveNames = items.every((item) => {
 If we now remove the name on our item, it will return false.
 
 Let's take a more accurate example.
-We have a list of users with temperatures. We want to see if everyone is under 37.8, or else someone potentially risks Covid-19.
+We have a list of users with temperatures. We want to see if everyone is under 37.8 or if someone potentially risks Covid-19.
 
 ```js
 const users = [

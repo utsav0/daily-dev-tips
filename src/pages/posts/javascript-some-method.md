@@ -13,7 +13,7 @@ Did you ever need to know if one of the elements in an array passed a test?
 
 This is where the `some()` method comes in handy.
 
-Let's keep using our product array, but let's add a discounted product.
+Let's keep using our product array, but add a discounted product.
 
 We then want to test if some of our products are discounted.
 
