@@ -23,13 +23,13 @@ To add this readme, visit the following URL and create a new repository.
 
 [GitHub New Repo](https://github.com/new), The name should be the same as your username. (Rebelchris/rebelchris for me).
 
-You will now see an 8-bit giggling GitHub Octocat and the notice you found the unique repository. Make sure to add the .readme here!
+You will now see an 8-bit giggling GitHub Octocat and notice you found the unique repository. Make sure to add the .readme here!
 
 ## Styling your Readme
 
 Of course, it's now up to you to style your readme page; there are some fantastic examples!
 
-You can use markdown to style it; of course, we can use the repo to store images!
+You can use markdown to style it; we can use the repo to store images!
 
 For example, I created an asset folder and uploaded it for my header. Then I'm using the following to add it to the .readme.
 
@@ -38,7 +38,7 @@ For example, I created an asset folder and uploaded it for my header. Then I'm u
 header](https://github.com/rebelchris/rebelchris/blob/master/assets/github-header.png)](https://daily-dev-tips.com)
 ```
 
-Another cool thing to add is the [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats). Follow instructions on the repo to get something like this:
+Another cool thing to add is the [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats). Follow the instructions on the repo to get something like this:
 
 ```html
 <img

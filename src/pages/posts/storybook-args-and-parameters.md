@@ -2,7 +2,7 @@
 layout: ../../layouts/Post.astro
 title: 'Storybook - Args, and Parameters'
 metaTitle: 'Storybook - Args, and Parameters'
-metaDesc: 'Workign with args and parameters in Storybook stories'
+metaDesc: 'Working with args and parameters in Storybook stories'
 ogImage: /images/21-11-2022.jpg
 image: https://daily-dev-tips.com/cdn-cgi/imagedelivery/Bki7Af2hq0JKVFw1XYYMQg/efba6bfd-c961-4d8a-b2a2-e89896c60800
 date: 2022-11-21T03:00:00.000Z
