@@ -19,7 +19,7 @@ I must admit that I've had to look up the difference between the two more than o
 
 ## JavaScript Slice
 
-To start, these are both arrays manipulating methods, but let's see what makes the `slice` one unique.
+These are both arrays manipulating methods, but let's see what makes the `slice` unique.
 
 The main difference is that the `slice` method copies a part of the original array. It does not change the original one.
 
@@ -30,7 +30,7 @@ console.log(sliced);
 // [1, 2, 3, "test"]
 ```
 
-The two parameters we can pass to the `slice` method are the starting point and the endpoint. So in our example, we are stating we start at position 0 and `slice` till position 4.
+The starting and end points are two parameters we can pass to the `slice` method. So in our example, we start at position 0 and `slice` till position 4.
 
 **Fun fact: Slice will also work on a string!**
 
@@ -85,7 +85,7 @@ console.log(array);
 
 We told the `splice` to enter our new element `random` at position 0. We can even define multiple elements here!
 
-You can have a play with these two methods on this Codepen.
+You can play with these two methods on this Codepen.
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="rebelchris" data-slug-hash="LYpKqgX" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vanilla JavaScript Slice vs Splice">
   <span>See the Pen <a href="https://codepen.io/rebelchris/pen/LYpKqgX">
