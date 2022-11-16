@@ -22,7 +22,7 @@ What you'll learn in this article:
 - ✅ Converting milliseconds to readable formats
 - ✅ Styling our clock
 
-The end result will look like this:
+The result will look like this:
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="rebelchris" data-slug-hash="abZRpqM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vanilla JavaScript countdown clock">
   <span>See the Pen <a href="https://codepen.io/rebelchris/pen/abZRpqM">
@@ -49,15 +49,15 @@ Let's start by defining our `HTML` structure.
 </div>
 ```
 
-We will have a title and intro paragraph, as well as a empty `done` div.
-This done div will be used if the timer expired.
+We will have a title, an intro paragraph, and an empty `done` div.
+This done div will be used if the timer expires.
 
 Then we have a list with days, hours, minutes, and seconds.
-Default on 0 in case the date expired.
+Default on 0 in case the date expires.
 
 ## Adding some CSS for styling
 
-Now ofcourse we want this too look a bit nicer.
+Now, of course, we want this to look a bit nicer.
 
 ```css
 body {
@@ -97,8 +97,8 @@ ul li span {
 }
 ```
 
-What you'll see is that we remove the main styling from the `ul` to use [Flexbox to center it](https://daily-dev-tips.com/posts/css-flexbox-most-easy-center-vertical-and-horizontal/), and space the elements.
-Then we add a box-shadow and some colors to make it pop more.
+You'll see that we remove the main styling from the `ul` to use [Flexbox to center it](https://daily-dev-tips.com/posts/css-flexbox-most-easy-center-vertical-and-horizontal/), and space the elements.
+Then we add a box shadow and some colors to make it pop more.
 
 ## JavaScript countdown timer
 
@@ -132,12 +132,12 @@ const days = hours * 24;
 
 What this means:
 
-- 1000 seconds = 1 millisecond so if we do (time / 1000) we get our seconds
+- 1000 seconds = 1 millisecond, so if we do (time / 1000) we get our seconds
 - (seconds \* 60) = 1 minute (60.000 milliseconds)
-- (minutes \* 60) = 1 hour, because 1 hour has 60 seconds.
-- (hours \* 24) = 1 day, because 1 day has 24 hours
+- (minutes \* 60) = 1 hour because 1 hour has 60 seconds.
+- (hours \* 24) = 1 day because 1 day has 24 hours
 
-Now we will need to create a `setInterval` function to run every second.
+We must create a `setInterval` function to run every second.
 
 ```js
 const x = setInterval(function () {
@@ -147,14 +147,14 @@ const x = setInterval(function () {
 
 > We attach it to a const to be able to unset it if it's no longer needed.
 
-Now, let's get the current timestamp and a difference between our end date and now.
+Let's get the current timestamp and the difference between our end date and now.
 
 ```js
 let now = new Date().getTime();
 const difference = end - now;
 ```
 
-The difference will now have the difference in milliseconds between now and our set date.
+The difference will now have the difference in milliseconds and our set date.
 
 Let's first check if it's not already expired.
 
@@ -166,7 +166,7 @@ if (difference < 0) {
 }
 ```
 
-Here, we check if the difference is smaller then 0, then we clear our interval so it won't run again.
+Here, we check if the difference is smaller than 0, then clear our interval so it won't run again.
 We also use a `return` to stop the rest of the function from running.
 
 Now all that's left is to show the correct numbers for each element.
@@ -178,9 +178,9 @@ minutesEl.innerText = Math.floor((difference % hours) / minutes);
 secondsEl.innerText = Math.floor((difference % minutes) / seconds);
 ```
 
-As mentioned in our example we return a floored value of the difference converted to each respectable element.
+As mentioned in our example, we return a floored value of the difference converted to each respectable element.
 
-> Note the use of the `%` is to get a remained back.
+> Note that the `%` is used to get the remaining back.
 
 For example, let's say our difference in milliseconds is 15091810828.
 
@@ -189,9 +189,9 @@ For example, let's say our difference in milliseconds is 15091810828.
 - Minutes: (15091810828 % 3600000) = 610828 => (610828 / 60000) = 10
 - Seconds: (15091810828 % 60000) = 10828 => (10828 / 1000) = 10
 
-This might be a bit much. I'd advise you to even write down one number and calculate it on paper to get a good feel for what's happening.
+This might be a bit much. I'd advise you to write down one number and calculate it on paper to get a good feel for what's happening.
 
-There we go, we now have a countdown timer in `JavaScript`, let me know what you create with this cool piece of code.
+There we go. We now have a countdown timer in `JavaScript`. Let me know what you create with this cool piece of code.
 
 ### Thank you for reading, and let's connect!
 

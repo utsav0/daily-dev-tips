@@ -9,7 +9,7 @@ tags:
   - developer
 ---
 
-Today we'll be exploring a design principle called `DRY` it stands for `Don't Repeat Yourself`. Of course, a pretty obvious one, meaning you shouldn't type code more than once.
+Today we'll be exploring a design principle called `DRY` which stands for `Don't Repeat Yourself`. Of course, a pretty obvious one, meaning you shouldn't type code more than once.
 
 The principle states: "Every piece of logic must have a single unambiguous representation within a system".
 
@@ -17,7 +17,7 @@ Of course, we see fewer and fewer reused codes with the upcoming component-based
 
 ## DRY Examples
 
-I will demonstrate some simple use-cases, but they should give you a good understanding of what DRY means.
+I will demonstrate some simple use cases, but they should give you a good understanding of DRY.
 
 ```js
 const foods = ['🧀', '🌶', '🍉'];
@@ -42,7 +42,7 @@ revAnimals = reverse(animals);
 ```
 
 Why would you do this?
-Think of this code as a little bit more complicated, a full sorting function, and suddenly, the sorting key changes. You now have to make changes twice instead of doing it once.
+Think of this code as a bit more complicated, a full sorting function, and suddenly, the sorting key changes. You now have to make changes twice instead of doing it once.
 
 Another good example is validations; this is where I personally fail sometimes.
 
@@ -89,7 +89,7 @@ class Validator {
 
 There you go. I hope you learned something about not repeating yourself in code.
 
-I am looking forward to hearing what kind of things you do that you could optimize?
+I am looking forward to hearing what things you do that you could optimize.
 
 ### Thank you for reading, and let's connect!
 
