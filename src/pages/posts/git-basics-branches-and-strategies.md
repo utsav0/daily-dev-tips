@@ -9,7 +9,7 @@ tags:
   - git
 ---
 
-Branches are an essential part of using Git. You can view a branch as separate versions of your project.
+Branches are an essential part of using Git. You can view a branch as a separate version of your project.
 
 Generally speaking, it's a good thing always to have these two branches in place:
 
@@ -17,7 +17,7 @@ Generally speaking, it's a good thing always to have these two branches in place
 2. **development**: The testing version of your app
 
 Besides these branches that are always there, you might encounter some other branches.
-These other branches depend on the type of issue they solve.
+These other branches depending on the type of issue they solve.
 
 ## Branches for critical hotfixes
 
@@ -32,19 +32,19 @@ More often, you'll be making new features. This could be a small feature or a bi
 
 In either way, you'll be using multiple feature branches. Each feature should be as small as possible, so it narrows down what that branch does.
 
-Once you are finished with a feature, it should be merged into the development branch for testing purposes.
+Once you finish a feature, it should be merged into the development branch for testing purposes.
 
-The testing should always be done on the individual/development branches. Once the tests are good and happy with the results, you can merge development into master.
+The testing should always be done on the individual/development branches. Once the tests are good, and you are happy with the results, you can merge development into master.
 
 If you want to be super fancy, you can introduce release branches. (For me, that's not a super high need)
 
 ## GitFlow
 
-With this, we have something called a GitFlow.
+With this, we have something called GitFlow.
 
 This workflow created by [Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) describes the flow that should be taken when developing using Git.
 
-This is an opinionated flow, but I've seen this success in a lot of different companies. Hence it's always the flow I choose for my projects.
+This is an opinionated flow, but I've seen this success in many companies. Hence it's always the flow I choose for my projects.
 
 See below for a visual representation of the model.
 
@@ -52,8 +52,8 @@ See below for a visual representation of the model.
 
 ## How to create branches
 
-This might all sound cool to you, and you have a good understanding of [committing code to Git](https://daily-dev-tips.com/posts/git-basics-your-first-commit-to-github/).
-But we haven't used any branches other than the master branch till now.
+This might sound cool to you, and you have a good understanding of [committing code to Git](https://daily-dev-tips.com/posts/git-basics-your-first-commit-to-github/).
+But we haven't used branches other than the master branch until now.
 
 Let's open up our project and create a development branch from whatever we have now.
 
@@ -84,7 +84,7 @@ And if we then go over to GitHub, we should see two new branches show up.
 ![GitHub multiple branches](https://cdn.hashnode.com/res/hashnode/image/upload/v1635314408871/gxYjCSid8.png)
 
 Just be aware of which branch you are working on.
-You can always switch to another branch by using the `checkout` command.
+You can always switch to another branch using the checkout command.
 
 ```bash
 git checkout master
@@ -92,7 +92,7 @@ git checkout master
 
 This command will reset you to the master branch. You can use any branch name instead of master.
 
-And that wraps up branches in Git. I hope you learned something about Gitflow and how to make your first own branch.
+And that wraps up branches in Git. I hope you learned about Gitflow and how to make your first branch.
 
 You can view my [branches on GitHub](https://github.com/rebelchris/git-test/branches).
 

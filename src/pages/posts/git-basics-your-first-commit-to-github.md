@@ -19,7 +19,7 @@ The result is a repository on GitHub that you or someone else can use to keep tr
 
 A repository is a folder on your system. But that folder isn't aware it should be a git repository yet.
 
-Let's change that. First make a testing folder on your local machine. I'll name my `git-test`.
+Let's change that. First, make a testing folder on your local machine. I'll name my `git-test`.
 
 ```bash
 mkdir git-test && cd git-test
@@ -37,13 +37,13 @@ We should see a response as follows.
 
 ![Git init succesfull](https://cdn.hashnode.com/res/hashnode/image/upload/v1635139826200/T9C1b4J8-.png)
 
-From now on Git will keep track of changes and files we add, which is amazing!
+From now on, Git will keep track of the changes and files we add, which is fantastic!
 
 ## Adding files to the repository
 
 Let's add a simple `README.md` file to our repository. You can use an editor for it.
 
-Inside of this file I placed the following markdown to test with.
+Inside this file, I placed the following markdown for testing.
 
 ```md
 # Hello GitHub
@@ -59,7 +59,7 @@ git status
 
 As you can see, the status mentions that the readme file is new or changed but isn't tracked yet.
 
-To add a single file to Git we can use the `add` command like so:
+To add a single file to Git, we can use the `add` command like so:
 
 ```bash
 git add README.md
@@ -104,13 +104,13 @@ By now, we can keep track of any changes locally, which is a great start. But th
 
 ## Add GitHub as a remote
 
-Head over to [GitHub](https://github.com/new) and create a new repository.
-Give this repository a descriptive name of your project.
+Head to [GitHub](https://github.com/new) and create a new repository.
+Give this repository a descriptive name for your project.
 
 ![GitHub create new repo](https://cdn.hashnode.com/res/hashnode/image/upload/v1635140706164/ql8FvPeN7.png)
 
 Once that's done, you enter the empty repo on GitHub.
-It has all the information we need, as we will be following the second paragraph of example code.
+It has all the information we need, as we will be following the second paragraph of the example code.
 
 ![GitHub empty repo description](https://cdn.hashnode.com/res/hashnode/image/upload/v1635140780469/XtUegZPbD.png)
 
@@ -124,15 +124,15 @@ git remote add origin git@github.com:rebelchris/git-test.git
 
 There is no real feedback for this step.
 
-In the above step, we add a remote with the name `origin`. You can name this differently, but the origin is the default and most common one.
+We add a remote with the name `origin` in the above step. You can name this differently, but the origin is the default and most common.
 
 ## Push git changes to GitHub
 
 The last step we want to do is to push our code to GitHub.
 
-Doing this will keep track of the changes we made and all the files we added.
+Doing this will keep track of our changes and all the files we added.
 
-To push to GitHub as we just set up, we need to run the following command.
+We need to run the following command to push to GitHub as we just set up.
 
 ```bash
 git push origin master
@@ -142,7 +142,7 @@ Here we tell git to push to our `origin` remote on the `master` branch.
 
 ![Git push command feedback in terminal](https://cdn.hashnode.com/res/hashnode/image/upload/v1635141007135/FTbA_6bxR.png)
 
-And if you now head over to GitHub, you should see your code and commit show up there.
+And if you now head over to GitHub, you should see your code and commit.
 
 ![GitHub showing our project code and commit](https://cdn.hashnode.com/res/hashnode/image/upload/v1635141058782/phQ7q1_KHe.png)
 
@@ -159,7 +159,7 @@ Hi GitHub, I'm Chris, and I just pushed code to you.
 ```
 
 In the same breath, add another file to see how it works with multiple files.
-I created a simple `test.txt` file and added some words to it.
+I created a simple `test.txt` file and added some words.
 
 Now let's follow the above steps again.
 
