@@ -11,7 +11,7 @@ tags:
 
 Today I want to go back to the basics when we start our websites: the **boilerplate template**.
 
-What a boilerplate stands for is a quick copy-paste `HTML` document that is the bare minimum to get started.
+A boilerplate is a quick copy-paste `HTML` document that is the bare minimum to get started.
 
 In this article, I'll share my version of the `HTML5` boilerplate with you guys and explain the parts that are to it.
 

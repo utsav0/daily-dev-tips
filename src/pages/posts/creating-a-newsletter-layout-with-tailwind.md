@@ -10,7 +10,7 @@ tags:
   - tailwind
 ---
 
-We have quite the extended layout for the Lifestyle blog as our blog overview.
+We have quite an extended layout for the Lifestyle blog as our blog overview.
 
 ![Lifestyle blog newsletter layout design](https://cdn.hashnode.com/res/hashnode/image/upload/v1611121748271/9Hiz5aazf.png)
 
@@ -24,9 +24,9 @@ In this article, I will be going through two ways of building this using Tailwin
 ## Analysing the design
 
 Before we start building, let's begin by analyzing the design.
-This is an excellent process to understand how we can best make it and what elements we will need.
+This is an excellent process to understand how we can best make it and what elements we need.
 
-Having a quick look, we can see some columns that we can use.
+Having a quick look, we can see some columns we can use.
 
 ![Layout grid](https://cdn.hashnode.com/res/hashnode/image/upload/v1611122350432/wO99d-E4O.webp)
 
@@ -34,15 +34,15 @@ Having a quick look, we can see some columns that we can use.
 
 What do you see in this outline?
 
-- Red area's 1 column spacer
+- Red area's 1-column spacer
 - Blue columns 6 column image
 - Green 5 column that gets sub-divided
 
-Then we are just missing the titles and Checked and Todo category element, which we'll introduce using absolute positions.
+Then we are just missing the titles and Checked and Todo category elements, which we'll introduce using absolute positions.
 
 ## Tailwind newsletter layout with flex
 
-I'm far more skilled in using flex than I am using a grid, so my first attend to create this in flex.
+I'm far more skilled in using flex than a grid, so my first attempt is to create this in flex.
 
 I've divided it into two sections, so let's introduce the first section, where the title is on the left-hand side.
 
@@ -56,8 +56,8 @@ Let's start by wrapping everything inside a flex div.
 </div>
 ```
 
-This will be the container for the first section. We tell it to flex column on mobile but switch to row on desktop.
-We also add a gap between the columns and a margin bottom for the next element.
+This will be the container for the first section. We tell it to flex the column on mobile but switch to the row on desktop.
+We also add a gap between the columns and a margin-bottom for the next element.
 
 Now we will need the two sections.
 Left: Image + Titel (total of 7 columns)
@@ -76,7 +76,7 @@ Right: Image + Summary (total of 6 columns)
 
 We make both sections 100% width for mobile, but we span them over the columns we want for desktop.
 
-The left column is also relative since we will be placing the title and category element absolute inside it.
+The left column is also relative since we will place the title and category element absolute inside it.
 
 Let's add the left elements we will need, and I'll walk you through the styling.
 
@@ -107,7 +107,7 @@ Let's add the left elements we will need, and I'll walk you through the styling.
 </div>
 ```
 
-Quite a big chunk, but we start by adding the category called `Health`. You will see its absolute position with a margin-top. This will offset it from the top a little bit.
+Quite a big chunk, but we start by adding the category `Health`. You will see its absolute position with a margin-top. This will offset it from the top a little bit.
 Inside that, you find the `<span>` element used to create the purple line to the right.
 
 The next element is the actual text. We also position this absolute but use flex to span it over the full height and use `items-center` to get the text in the middle.
@@ -170,7 +170,7 @@ That is it. We should now have the following responsive layout element for the f
   <source src="https://res.cloudinary.com/daily-dev-tips/video/upload/q_auto/tailwind-responsive_l7p0km.mp4" type="video/mp4" />
 </video>
 
-The next element is very similar. The only different thing is the position of the title is reversed, and the left side is a column layout.
+The next element is very similar. The only difference is that the title's position is reversed, and the left side is a column layout.
 
 ```html
 <div class="flex flex-col-reverse gap-4 md:flex-row">
@@ -208,7 +208,7 @@ The next element is very similar. The only different thing is the position of th
 </div>
 ```
 
-A super important element here is the top-level `flex-col-reverse`. This makes sure that the bigger right side is on top of mobile devices!
+A super important element here is the top-level `flex-col-reverse`. This ensures that the bigger right side is on top of mobile devices!
 
 A super nighty flex function!
 
@@ -223,15 +223,15 @@ You can find this complete example on the following Codepen.
 
 ## Tailwind newsletter layout with grid
 
-We made it, it was working, and that would have been it. However, I had a feeling this would be a better fit for [CSS Grid](https://daily-dev-tips.com/posts/css-grid-introduction/).
+We made it, it was working, and that would have been it. However, I felt this would be a better fit for [CSS Grid](https://daily-dev-tips.com/posts/css-grid-introduction/).
 
 So I put out a tweet asking for some tips on doing this with Tailwind Grid.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Does anyone know if this layout is possible with Tailwind Grid? (without custom config)<br /><br />I&#39;ve got it with Flex, but have a feeling grid might be the better solution.<a href="https://t.co/T89GyQ4syV">https://t.co/T89GyQ4syV</a> <a href="https://t.co/3UMr2r0MOP">pic.twitter.com/3UMr2r0MOP</a></p>&mdash; Chris Bongers 🤓💻⚡️ (@DailyDevTips1) <a href="https://twitter.com/DailyDevTips1/status/1351192038595842051?ref_src=twsrc%5Etfw">January 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Does anyone know if this layout is possible with Tailwind Grid? (without custom config)<br /><br />I&#39;ve got it with Flex, but I feel grid might be the better solution.<a href="https://t.co/T89GyQ4syV">https://t.co/T89GyQ4syV</a> <a href="https://t.co/3UMr2r0MOP">pic.twitter.com/3UMr2r0MOP</a></p>&mdash; Chris Bongers 🤓💻⚡️ (@DailyDevTips1) <a href="https://twitter.com/DailyDevTips1/status/1351192038595842051?ref_src=twsrc%5Etfw">January 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I started converting what I had into a grid layout with the feedback, and it went surprisingly well.
+I started converting what I had into a grid layout with the feedback, which went surprisingly well.
 
-It was more difficult for me to make this in a CSS grid, so bear with me as there might be a more efficient way of doing this grid layout.
+It was more challenging to make this in a CSS grid, so bear with me, as there might be a more efficient way of doing this grid layout.
 
 Let's start with the first block again.
 
@@ -241,7 +241,7 @@ Let's start with the first block again.
 </div>
 ```
 
-We create a 12 column grid with two rows and add a gap as we did in the flex layout.
+We create a 12-column grid with two rows and add a gap as we did in the flex layout.
 
 I'm using a column/row-start combination method to overflow the elements.
 
