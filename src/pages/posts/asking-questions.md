@@ -37,11 +37,11 @@ So it would help if you asked questions wherever possible:
 
 ## How should you ask a question?
 
-This is a complicated topic since every person and platform has its own set of rules on how you should ask the question. My best advice is to ask about the item as you want to receive it.
+This is a complicated topic since every person and platform has its own set of rules on how you should ask questions. My best advice is to ask about the item as you want to receive it.
 
-A personal favorite is asking people who know nothing about development a development-related question. Why? They come with out-of-the-box solutions. But you have to be very careful in asking the issue since they will not understand what you are talking about.
+A personal favorite is asking people who know nothing about development a development-related question. Why? They come with out-of-the-box solutions. But you must be very careful in asking about the issue since they will not understand what you are talking about.
 
-**Example:** You're stuck on a very technical loop inside another loop and have no idea how to fix it.
+**Example:** You're stuck on a technical loop inside another loop and have no idea how to fix it.
 
 You ask your friend and explain what the loop is for in the very first section. They might say: Why do you even need x for?
 

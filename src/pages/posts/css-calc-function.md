@@ -9,8 +9,8 @@ tags:
   - css
 ---
 
-The CSS Calc() function is handy to mix percentage values with fixed pixels.
-We can also use the calc() function to divide into equal sets.
+The CSS Calc() function is handy for mixing percentage values with fixed pixels.
+We can also divide the calc() function into equal sets.
 
 ## How to use CSS Calc()?
 
