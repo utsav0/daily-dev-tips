@@ -9,32 +9,33 @@ tags:
   - css
   - tailwind
 ---
+
 Hi everyone, confession time: I had never used Tailwind CSS before this week.
 
-And it's not the end of the world; if you work for a company, they have certain working ways. This means the products they use work for them.
+And it's not the end of the world; if you work for a company, they have specific working ways. This means the products they use work for them.
 
-It's fun to think, oh something new came out, let's all start using that, but in reality, this does not happen in companies.
+It's fun to think, oh, something new came out, let's all start using that, but in reality, this does not happen in companies.
 
-So here I was missing out on everyone having so much fun with Tailwind CSS.
+So here I was, missing out on everyone having so much fun with Tailwind CSS.
 
-I did have it on my radar for quite a while, and making a recent transition to a new job brought the opportunity to start using Tailwind.
+I did have it on my radar for quite a while, and a recent transition to a new job allowed me to start using Tailwind.
 
 ## What I was using
 
-Let me start by explaining what I was using before. In my previous job, it was a lot of bootstrap and towards the end, custom BEM CSS.
+Let me start by explaining what I was using before. In my previous job, it was a lot of bootstrap and, towards the end, custom BEM CSS.
 
-Meaning we created custom stylesheets with a custom kind of framework, this made the code very light, and in that company, everyone would understand how to use it.
+Meaning we created custom stylesheets with a custom kind of framework, which made the code very light, and in that company, everyone would understand how to use it.
 
 That was all good and well, but not very effective with onboarding people, and even for me, it was looking for certain classes sometimes.
 
-## Why I did switch
+## Why did I switch
 
 Even though I'm a big fan of Pure CSS (No framework) Tailwind seemed to be a perfect bridge.
 
 It's a non-bloated utility framework.
-Meaning we don't have pre-defined component, and it helps us write faster css.
+This means we don't have a pre-defined component, which helps us write faster css.
 
-For example, let's create a button that will have a different color on hover.
+For example, let's create a button with a different color on hover.
 
 Tailwind
 
@@ -76,18 +77,18 @@ So from using it for a week, the main benefits to me seem:
 
 ### Fast to setup
 
-It's super fast to get started with Tailwind. Either a CDN load or NPM install, and you're good to go.
-[Their docs](https://tailwindcss.com/docs/installation) are also super good, so you can just type there what you are looking for and apply that.
+It's super fast to get started with Tailwind. Either a CDN load or NPM installs, and you're good to go.
+[Their docs](https://tailwindcss.com/docs/installation) are also super good, so you can type there what you are looking for and apply that.
 
 > Setting up [Tailwind for Angular](https://daily-dev-tips.com/posts/adding-tailwind-css-to-an-angular-project/).
 
 ### Speed
 
-It's so easy to write your own "components" sort of speak. The code is readable. It's so self-explanatory what an element does.
+It's so easy to write your own "components," sort of speak. The code is readable. It's so self-explanatory what an element does.
 
 ### No bloating CSS
 
-You don't need 20 `SCSS` files that all have some part of your component in them.
+You don't need 20 `SCSS` files that all have some part of your component.
 
 ### Easy responsiveness
 
@@ -108,23 +109,23 @@ With that we can easily add classes like so:
 <h1 class="text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl">Title</h1>
 ```
 
-This is just an example, if you will make your screen smaller and bigger we see a different font-size.
+This is just an example. We see a different font size if you make your screen smaller and bigger.
 
 ## Pitfalls of Tailwind
 
-So one of the things I noted very quickly was the repeating classes that didn't really make it extendable at all!
+So one of the things I noted very quickly was the repeating classes that didn't make it extendable at all!
 
-So let's se wee have a couple of buttons in our navigation as such:
+So let's see we have a couple of buttons in our navigation as such:
 
 ```html
-<a class="bold text-xl text-indigo-500 hover:text-indigo-700">Link 1</a>
-<a class="bold text-xl text-indigo-500 hover:text-indigo-700">Link 2</a>
-<a class="bold text-xl text-indigo-500 hover:text-indigo-700">Link 3</a>
+<a class="text-xl text-indigo-500 bold hover:text-indigo-700">Link 1</a>
+<a class="text-xl text-indigo-500 bold hover:text-indigo-700">Link 2</a>
+<a class="text-xl text-indigo-500 bold hover:text-indigo-700">Link 3</a>
 ```
 
-Wow, that's annoying now we need to have all those classes three times, here my oldskool css would definitely be better!
+Wow, that isn't very pleasant now; we need to have all those classes three times. Here, my oldskool css would be better!
 
-BUT, there is a solution. Tailwind can extend!
+BUT there is a solution. Tailwind can extend!
 
 So we can define a new class for those elements and render them as such by using `@apply`.
 
@@ -139,15 +140,15 @@ So we can define a new class for those elements and render them as such by using
   @apply bold text-xl text-indigo-500;
 }
 .indigo-btn:hover {
-  @apply text-indigo-700
+  @apply text-indigo-700;
 }
 ```
 
-This will now do the same, making it easier to change and re-use our own defined components.
+This will now do the same, making changing and reusing our defined components easier.
 
-In the end, it's all about creating a good mix between not reinventing the wheel and making use of the utilities we have.
+Ultimately, it's all about creating a good mix between not reinventing the wheel and using the utilities we have.
 
-So far, I'm like how quick and easy Tailwind CSS is!
+So far, I'm like how quick, and easy Tailwind CSS is!
 
 ### Thank you for reading, and let's connect!
 

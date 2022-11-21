@@ -8,16 +8,17 @@ date: 2020-10-19T03:00:00.000Z
 tags:
   - angular
 ---
-Many times you will have a component that needs to receive or send data to its parent component.
+
+You will often have a component that needs to receive or send data to its parent component.
 
 Let's draw the following example, we will have an app component, and inside an alert component.
 
 ![Augury Angular](https://cdn.hashnode.com/res/hashnode/image/upload/v1602567406942/Q1lqeH92n.png)
 
-The alert component needs to receive a message to show. 
+The alert component needs to receive a message to show.
 Once we click a button, the parent needs to know what happened.
 
-For this, we can use the @Input to receive, and @Output to emit a change or action.
+We can use the @Input to receive and @Output to emit a change or action.
 
 ## Setting up our components
 
@@ -55,16 +56,14 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-alert',
   templateUrl: './alert.component.html',
-  styleUrls: ['./alert.component.scss']
+  styleUrls: ['./alert.component.scss'],
 })
 export class AlertComponent implements OnInit {
   @Input() message: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
 ```
 
@@ -82,17 +81,14 @@ Let's define a message to send there.
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.scss']
+  styleUrls: ['./welcome.component.scss'],
 })
 export class WelcomeComponent implements OnInit {
-
   messageToSend: string = 'This is the message';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
 ```
 
@@ -108,7 +104,7 @@ If we then run our app, we see the following result.
 
 ## Using the @Output decorator
 
-It's cool to send data across to our child component, but how do we receive actions back?
+It's cool to send data to our child component, but how do we receive actions back?
 
 This is where the @Output decorator comes into play. This can use an `EventEmitter` to notify our changes.
 
@@ -125,7 +121,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class AlertComponent implements OnInit {
   @Input() message: string;
   @Output() messageBack = new EventEmitter<string>();
-  
+
   constructor() { }
 
   ngOnInit(): void {
@@ -140,15 +136,17 @@ export class AlertComponent implements OnInit {
 
 Here you can see we are setting the @Output as an EventEmitter.
 
-Then we added a new function called `sendMessageBack` this accepts a string.
+Then we added a new function called `sendMessageBack`, which accepts a string.
 Once it's called, it emits the message to the output.
 
-We can then add this to our `alert.component.html` in the following way.
+We can add this to our `alert.component.html` in the following way.
 
 ```html
 <h1>Alert: {{ message }}</h1>
 <br />
-<button (click)="sendMessageBack('Secret message here')">Send a message back</button>
+<button (click)="sendMessageBack('Secret message here')">
+  Send a message back
+</button>
 ```
 
 We now need to make sure our welcome component can receive this.
@@ -158,20 +156,23 @@ Let's change the `welcome.component.html`.
 ```html
 <h1>Welcome page</h1>
 <hr />
-<app-alert [message]="messageToSend" (messageBack)="getMessage($event)"></app-alert>
+<app-alert
+  [message]="messageToSend"
+  (messageBack)="getMessage($event)"
+></app-alert>
 ```
 
-Here you see we are setting the @Output (messageBack) to call a event called `getMessage`.
+Here you see we are setting the @Output (messageBack) to call an event called `getMessage`.
 
 Let's create this getMessage function in our `welcome.component.ts`.
 
 ```js
 getMessage(event) {
-	this.messageToSend = event;
+  this.messageToSend = event;
 }
 ```
 
-We will be setting the message we are sending to whatever we received.
+We will be setting the message we are sending to whatever we receive.
 
 If you now run the app and click the button, you'll see the message change!
 
