@@ -51,7 +51,7 @@ My idea is to combine the CSS art I know and try out [pixel art](https://pokecod
 
 Let's start with the logo. I'm sure you might think, oh well, you can use a rounded square and put a round div over it, r right?
 
-And yes, we could do that, but then we can't use backgrounds behind it.
+And yes, we could do that, but we can't use backgrounds behind it.
 
 So I decided to go with a little different approach.
 
@@ -119,7 +119,7 @@ I've also made sure the right arm is one second delayed.
 }
 ```
 
-You can see I used the `before` selector to add the little round hand-like shapes, which would make the arms look neater.
+I used the `before` selector to add the little round hand-like shapes, making the arms look neater.
 
 This shape is a square box where we color only two sides of a rounded border.
 
@@ -151,7 +151,7 @@ As for the swing animation goes:
 }
 ```
 
-A very straightforward rotating from 45 degrees to 0 and back.
+A very straightforward rotation from 45 degrees to 0 and back.
 I'm using the scaleY to invert because I started upside down and was too lazy to revert it 😂.
 
 The legs are a very similar approach, but they are longer, and the shoes are slightly different.
@@ -189,7 +189,7 @@ The legs are a very similar approach, but they are longer, and the shoes are sli
 }
 ```
 
-And for the animation, I used the same approach. But with fewer degrees since your legs don't swing as much as your arms.
+And for the animation, I used the same approach. But with fewer degrees, your legs don't swing as much as your arms.
 
 ```css
 @keyframes move-leg {
@@ -221,25 +221,25 @@ The glasses look like this:
   position: absolute;
   left: 15%;
   z-index: 3;
-  box-shadow: 10px 10px #000000, 20px 10px #000000, 30px 10px #000000, 40px 10px #000000,
-    50px 10px #000000, 60px 10px #000000, 70px 10px #000000, 80px 10px #000000,
-    90px 10px #000000, 100px 10px #000000, 110px 10px #000000, 120px 10px #000000,
-    130px 10px #000000, 140px 10px #000000, 150px 10px #000000, 160px 10px #000000,
-    170px 10px #000000, 180px 10px #000000, 190px 10px #000000, 200px 10px #000000,
-    10px 20px #000000, 20px 20px #000000, 30px 20px #000000, 40px 20px #000000,
-    50px 20px #000000, 60px 20px #000000, 70px 20px #000000, 80px 20px #000000,
-    90px 20px #000000, 120px 20px #000000, 130px 20px #000000, 140px 20px #000000,
-    150px 20px #000000, 160px 20px #000000, 170px 20px #000000, 180px 20px #000000,
-    190px 20px #000000, 200px 20px #000000, 20px 30px #000000, 30px 30px #000000,
-    40px 30px #000000, 50px 30px #000000, 60px 30px #000000, 70px 30px #000000,
-    80px 30px #000000, 90px 30px #000000, 120px 30px #000000, 130px 30px #000000,
-    140px 30px #000000, 150px 30px #000000, 160px 30px #000000, 170px 30px #000000,
-    180px 30px #000000, 190px 30px #000000, 30px 40px #000000, 40px 40px #000000,
-    50px 40px #000000, 60px 40px #000000, 70px 40px #000000, 80px 40px #000000,
-    130px 40px #000000, 140px 40px #000000, 150px 40px #000000, 160px 40px #000000,
-    170px 40px #000000, 180px 40px #000000, 40px 50px #000000, 50px 50px #000000,
-    60px 50px #000000, 70px 50px #000000, 140px 50px #000000, 150px 50px #000000,
-    160px 50px #000000, 170px 50px #000000;
+  box-shadow: 10px 10px #000000, 20px 10px #000000, 30px 10px #000000, 40px 10px
+      #000000, 50px 10px #000000, 60px 10px #000000, 70px 10px #000000, 80px
+      10px #000000, 90px 10px #000000, 100px 10px #000000, 110px 10px #000000, 120px
+      10px #000000, 130px 10px #000000, 140px 10px #000000, 150px 10px #000000, 160px
+      10px #000000, 170px 10px #000000, 180px 10px #000000, 190px 10px #000000, 200px
+      10px #000000, 10px 20px #000000, 20px 20px #000000, 30px 20px #000000, 40px
+      20px #000000, 50px 20px #000000, 60px 20px #000000, 70px 20px #000000, 80px
+      20px #000000, 90px 20px #000000, 120px 20px #000000, 130px 20px #000000, 140px
+      20px #000000, 150px 20px #000000, 160px 20px #000000, 170px 20px #000000, 180px
+      20px #000000, 190px 20px #000000, 200px 20px #000000, 20px 30px #000000, 30px
+      30px #000000, 40px 30px #000000, 50px 30px #000000, 60px 30px #000000, 70px
+      30px #000000, 80px 30px #000000, 90px 30px #000000, 120px 30px #000000, 130px
+      30px #000000, 140px 30px #000000, 150px 30px #000000, 160px 30px #000000, 170px
+      30px #000000, 180px 30px #000000, 190px 30px #000000, 30px 40px #000000, 40px
+      40px #000000, 50px 40px #000000, 60px 40px #000000, 70px 40px #000000, 80px
+      40px #000000, 130px 40px #000000, 140px 40px #000000, 150px 40px #000000, 160px
+      40px #000000, 170px 40px #000000, 180px 40px #000000, 40px 50px #000000, 50px
+      50px #000000, 60px 50px #000000, 70px 50px #000000, 140px 50px #000000, 150px
+      50px #000000, 160px 50px #000000, 170px 50px #000000;
 }
 ```
 
@@ -251,7 +251,7 @@ I enjoyed using this and will most likely dedicate a complete article to pixel a
 
 I thought it would be cool to make the character whistle. In this case, it means a musical note comes out of its "hole" (mouth?).
 
-For this, I used the `before` selector on the hashnode div.
+I used the `before` selector on the hashnode div.
 
 ```css
 .hashnode {
@@ -324,7 +324,7 @@ For this, I created a big circle.
 
 The circle is then filled with a PNG image of the world. You can open the above image to see what it looks like.
 
-I've added a `world` animation that will spin it around. It's important to note the `linear` animation so it won't slow down once it's almost complete but move at the same speed all the time.
+I've added a `world` animation that will spin it around. It's important to note the `linear` animation so it won't slow down once it's almost complete but simultaneously move at the same speed.
 
 The animation itself looks like this:
 
@@ -347,12 +347,14 @@ Go ahead, click the character...
 
 (Put your music up! 🎵)
 
-Yes, I decided to add "Daft Punk - Around the world" when clicking the logo.
+I decided to add "Daft Punk - Around the world" when clicking the logo.
 
 For this, we leverage a little bit of JavaScript that looks like this:
 
 ```js
-const audio = new Audio('https://download.mp3very.buzz/d/Daft-Punk-Around-The-World.mp3');
+const audio = new Audio(
+  'https://download.mp3very.buzz/d/Daft-Punk-Around-The-World.mp3'
+);
 const hashnode = document.querySelector('.hashnode');
 hashnode.addEventListener('click', () => {
   audio.paused ? audio.play() : audio.pause();
