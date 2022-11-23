@@ -20,9 +20,9 @@ You can [download the Python Visual Studio Code plugin here](https://marketplace
 
 ## Running Python files in Visual Studio Code
 
-The plugin will bring this cool run button to run your Python scripts inside Visual Studio automatically.
+The plugin will automatically bring this cool run button to run your Python scripts inside Visual Studio.
 
-It will automatically start your environment and execute the command from there, which is incredible!
+It will automatically start your environment and execute the command, which is incredible!
 
 ![Running Python inside Visual Studio Code](https://cdn.hashnode.com/res/hashnode/image/upload/v1620886496761/A_NtJ4sO4.png)
 
@@ -31,11 +31,11 @@ It also introduces more run functions to execute a test and many more options fo
 ## IntelliSense and documentation
 
 These are super handy for anyone.
-The plugin will provide IntelliSense auto-complete functionality, as you can see in the screenshot below.
+The plugin will provide IntelliSense auto-complete functionality, as shown in the screenshot below.
 
 ![VSC Python IntelliSense](https://cdn.hashnode.com/res/hashnode/image/upload/v1620886723334/-utdqavzs.png)
 
-Furthermore, it can even state documentation when we hover on certain blocks of code.
+Furthermore, it can even state documentation when we hover over certain code blocks.
 
 ![Python documentation in Visual Studio Code](https://cdn.hashnode.com/res/hashnode/image/upload/v1620886806068/bZv2BnDm5.png)
 
@@ -47,7 +47,7 @@ This will, in return, stop the code at that breakpoint and tell us what's going 
 
 ![Debugging Python in Visual Studio Code](https://cdn.hashnode.com/res/hashnode/image/upload/v1620887146568/eHON7BW7T.png)
 
-There are even more cool features to this plugin, but I found these to be super useful for people starting Python.
+This plugin has even more cool features, but I found these to be super useful for people starting Python.
 
 ### Thank you for reading, and let's connect!
 

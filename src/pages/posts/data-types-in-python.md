@@ -10,7 +10,7 @@ tags:
 ---
 
 Data types are an essential aspect of a programming language.
-As it comes down to Python there are several categorized data types built-in that we can leverage.
+As it comes down to Python, there are several categorized data types built in that we can leverage.
 
 This article will guide you through the categories and which type each category has.
 
@@ -18,7 +18,7 @@ This guide will show you the basics of each. I will do a more detailed guide on 
 
 ## Text type data type in Python
 
-As it comes to string in Python, there is only one option: the `str`.
+Regarding strings in Python, there is only one option: the `str`.
 
 As single or double quotes define string as we can see here:
 
@@ -43,7 +43,7 @@ b = 3.14 # Float
 c = 1j # Complex
 ```
 
-Integers can be numbers of any length, and they can even be negative.
+Integers can be numbers of any length and even be negative.
 The only thing is they can't have decimals.
 
 Some examples of different int in Python.
@@ -54,7 +54,7 @@ b = 83458903489734890
 c = -2323434
 ```
 
-As for a float, this again is a number, but it can hold decimals.
+As for a float, this is a number, but it can hold decimals.
 
 ```python
 a = 3.14
@@ -62,7 +62,7 @@ b = 1.0
 c = -40.53
 ```
 
-The complex to me is a new addition in programming, and it can define an imaginary part defined by the letter `j`.
+The complex, to me, is a new addition to programming, and it can define an imaginary part determined by the letter `j`.
 
 ```python
 a = 1+2j
@@ -118,18 +118,18 @@ Dictionaries are used to store data as a key-value pair.
 
 ```python
 Dict = {
-	"type": "pet",
-	"animal": "dog",
-	"name": "Yaatree"
+    "type": "pet",
+    "animal": "dog",
+    "name": "Yaatree"
 }
 ```
 
-A dictionary is changeable, so items can be removed, added, or changed.
+A dictionary is changeable so that items can be removed, added, or changed.
 We can, however, not have duplicates in a `dict`.
 
 ## Boolean type data type in Python
 
-As for the boolean, which we know holds a true/false statement can be used as the `bool` variable.
+As for the boolean, we know a true/false statement can be used as the `bool` variable.
 
 For instance, we can check random values for True or False.
 
@@ -144,7 +144,7 @@ bool(10 > 9) # True
 
 ## Data types in Python
 
-These are the basic built-in data types of Python you need to know when getting started with Python.
+You need to know these basic built-in data types of Python when getting started with Python.
 
 I would strongly suggest creating some basic Python script to run these and have a play around with.
 
