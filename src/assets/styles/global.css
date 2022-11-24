@@ -124,3 +124,6 @@ pre > code.highlight {
   outline: 0.4em solid red;
   outline-offset: 0.4em;
 }
+.adsbygoogle[data-ad-status='unfilled'] {
+  display: none !important;
+}
