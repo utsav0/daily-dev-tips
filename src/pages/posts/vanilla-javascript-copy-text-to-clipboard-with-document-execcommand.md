@@ -9,7 +9,7 @@ tags:
   - javascript
 ---
 
-Yesterday we saw how we can use the new and improved [Clipboard API](<(https://daily-dev-tips.com/posts/vanilla-javascript-copy-text-to-clipboard-with-clipboard-api/)>) to copy text to our clipboard.
+Yesterday we saw how we can use the new and improved [Clipboard API](https://daily-dev-tips.com/posts/vanilla-javascript-copy-text-to-clipboard-with-clipboard-api/) to copy text to our clipboard.
 But if we want to have some more support we need to use the old version which is `document.execCommand()`.
 
 ## How to copy text with Vanilla JavaScript document.execCommand()
