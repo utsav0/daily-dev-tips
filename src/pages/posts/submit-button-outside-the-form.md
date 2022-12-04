@@ -4,7 +4,7 @@ title: 'Submit button outside the form'
 metaTitle: 'Submit button outside the form'
 metaDesc: 'How to use a submit button outside a HTML form'
 ogImage: /images/04-12-2022.jpg
-image: https://daily-dev-tips.com/cdn-cgi/imagedelivery/Bki7Af2hq0JKVFw1XYYMQg/85f72510-7db3-4898-bd8f-8f620b19f100
+image: https://daily-dev-tips.com/cdn-cgi/imagedelivery/Bki7Af2hq0JKVFw1XYYMQg/9c9c137c-f03e-4352-7b2a-8a5785593a00
 date: 2022-12-04T03:00:00.000Z
 tags:
   - html
