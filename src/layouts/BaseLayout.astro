@@ -29,6 +29,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     />
     <link rel="pingback" href="https://webmention.io/daily-dev-tips.com/xmlrpc"
     />
+    <link rel="canonical" href={canonicalURL.href} />
     <meta property="og:site_name" content="Daily Dev Tips" />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
