@@ -74,22 +74,22 @@ const ConditionalWrapper = ({ condition, wrapper, children }) =>
 With that in place, we can use it on our existing component to clean it up.
 
 ```js
-const ServiceCard = ({title, description, image, url}) => {
-	return (
-		<section>
-			<ConditionalWrapper
-				condition={url}
-				wrapper={children => <a href={url}>{children}</a>}
-			>
-				<>
-					<h2>{title}</h2>
-					<p>{description}</p>
-					<img src={image} alt={title} />
-				</a>
-			</ConditionalWrapper>
-		</section>
-	)
-}
+const ServiceCard = ({ title, description, image, url }) => {
+  return (
+    <section>
+      <ConditionalWrapper
+        condition={url}
+        wrapper={(children) => <a href={url}>{children}</a>}
+      >
+        <>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <img src={image} alt={title} />
+        </>
+      </ConditionalWrapper>
+    </section>
+  );
+};
 ```
 
 And now, if we use our component, depending on whether we pass the URL. It will render with or without the href. And the best part is that we have no duplication in our elements.
