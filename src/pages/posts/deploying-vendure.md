@@ -4,7 +4,7 @@ title: 'Deploying Vendure'
 metaTitle: 'Deploying Vendure'
 metaDesc: "Let's see how we can deploy the Vendure ecosystem"
 ogImage: /images/20-12-2022.jpg
-image: https://daily-dev-tips.com/cdn-cgi/imagedelivery/Bki7Af2hq0JKVFw1XYYMQg/2a38954f-58cd-4b8f-9b7c-2b423fb46c00
+image: https://daily-dev-tips.com/cdn-cgi/imagedelivery/Bki7Af2hq0JKVFw1XYYMQg/8e3f07ad-a4e8-413d-da7c-26a7b917b100
 date: 2022-12-20T03:00:00.000Z
 tags:
   - vendure
