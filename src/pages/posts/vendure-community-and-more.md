@@ -4,7 +4,7 @@ title: 'Vendure community and more'
 metaTitle: 'Vendure community and more'
 metaDesc: 'A close look at the Vendure community and what makes a healthy one for me'
 ogImage: /images/21-12-2022.jpg
-image: https://daily-dev-tips.com/cdn-cgi/imagedelivery/Bki7Af2hq0JKVFw1XYYMQg/2a38954f-58cd-4b8f-9b7c-2b423fb46c00
+image: https://daily-dev-tips.com/cdn-cgi/imagedelivery/Bki7Af2hq0JKVFw1XYYMQg/7b76ead6-5957-4056-e965-7e79b67d2f00
 date: 2022-12-21T03:00:00.000Z
 tags:
   - vendure
