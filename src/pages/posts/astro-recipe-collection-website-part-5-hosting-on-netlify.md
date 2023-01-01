@@ -58,7 +58,7 @@ Don't worry, Netlify makes this super easy, literally super easy!
 To get a new release online, all you have to do is push your changes to the master branch! (Or whichever branch you setup)
 
 I happen to like Netlify since it's super easy, and their free tier is massive.
-But if you like to explore other options, check out [Astro's documentation for hosting](https://docs.astro.build/guides/deploy).
+But if you like to explore other options, check out [Astro's documentation for hosting](https://docs.astro.build/en/guides/deploy/vercel/#overview).
 
 ### Thank you for reading, and let's connect!
 

@@ -6,7 +6,7 @@ metaDesc: 'Creating a reusable modal component in Astro'
 image: /images/02-11-2021.jpg
 date: 2021-11-02T03:00:00.000Z
 tags:
-- astro
+  - astro
 ---
 
 Today we'll be making a reusable modal component in Astro.
@@ -38,7 +38,7 @@ const {id, open} = Astro.props;
 ---
 ```
 
-These three dots are known as [frontmatter](https://docs.astro.build/core-concepts/astro-components/#frontmatter-script) and can be used to include javascript in your Astro components.
+These three dots are known as [frontmatter](https://docs.astro.build/en/guides/markdown-content/#frontmatter-layout) and can be used to include javascript in your Astro components.
 
 Then we want to render the button that can open a modal.
 
@@ -106,13 +106,13 @@ import Modal from '../components/Modal.astro';
 To use it, you can type `HTML` like this:
 
 ```jsx
-<Modal id="dialog" open="Open modal">
-  <main slot="main">
+<Modal id='dialog' open='Open modal'>
+  <main slot='main'>
     <p>Some extra content you would like here</p>
     <hr />
-    <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo" />
+    <img width='60' height='80' src='/assets/logo.svg' alt='Astro logo' />
   </main>
-  <button slot="close">Close modal</button>
+  <button slot='close'>Close modal</button>
 </Modal>
 ```
 

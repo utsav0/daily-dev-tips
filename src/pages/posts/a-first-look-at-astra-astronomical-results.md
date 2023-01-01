@@ -26,7 +26,7 @@ The team behind Astro took inspiration from the biggest open source projects aro
 This makes it like the super combination between an interactive component library like React and a static site generator like Eleventy.
 
 Astro also comes with its files called `.astro` files. They are very much like `.jsx` files!
-There are some minor differences on which Astro provides an [excellent comparison table](https://docs.astro.build/core-concepts/astro-components#comparing-astro-versus-jsx).
+There are some minor differences on which Astro provides an [excellent comparison table](https://docs.astro.build/en/comparing-astro-vs-other-tools/#astro-vs-jsx).
 
 But of course, the main reason why Astro is so great:
 

@@ -16,7 +16,7 @@ You might remember `getServerSideProps` and `getStaticProps` from the previous R
 
 ## Fetching data
 
-The recommended way of fetching data is using [server components](https://daily-dev-tips.com/posts/next-13-sever-and-client-components/), as discussed in the previous article.
+The recommended way of fetching data is using [server components](https://daily-dev-tips.com/posts/next-13-server-and-client-components/), as discussed in the previous article.
 
 According to the docs, there are a lot of benefits from fetching from server components:
 

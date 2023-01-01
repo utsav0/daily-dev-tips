@@ -149,7 +149,7 @@ It's pretty cool that we have individual pages, but we have no way to show them 
 Let's go ahead and create such an overview page.
 We'll use a pagination collection, where our page shows five recipes per page.
 
-> Note: Click here for more information on the [Astro Dynamic Routing](https://docs.astro.build/core-concepts/routing/#dynamic-routes).
+> Note: Click here for more information on the [Astro Dynamic Routing](https://docs.astro.build/en/core-concepts/routing/).
 
 To create a collection page in Astro, we must create a file that's wrapped in brackets. Since our collection should be `recipes`, we must first make a `recipes` folder in our `pages` folder.
 Inside that we can create a `[...page].astro` folder.

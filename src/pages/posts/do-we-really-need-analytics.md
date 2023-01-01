@@ -16,7 +16,7 @@ At one point, a whole debate around privacy and Google Analytics is even illegal
 
 I didn't even think about it and started looking for alternatives immediately.
 
-Eventually, I decided to go with Fathom, as you can read in [this article](https://daily-dev-tips.com/posts/8-google-analytics-privacy-focussed-alternatives/).
+Eventually, I decided to go with Fathom, as you can read in [this article](https://daily-dev-tips.com/posts/9-google-analytics-privacy-focussed-alternatives/).
 
 Don't get me wrong. I love Fathom or even Plausible.
 But hear me out on this.

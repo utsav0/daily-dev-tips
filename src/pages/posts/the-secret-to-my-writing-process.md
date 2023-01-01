@@ -31,7 +31,7 @@ It looks like this:
 
 ![My notion process](https://cdn.hashnode.com/res/hashnode/image/upload/v1601273548067/cD0qhq9c5.png)
 
-What you see here is a [Notion table](https://www.notion.so/Tables-66a1cce8fb6f4f64b9996f4146c51fad).
+What you see here is a [Notion table](https://www.notion.so/help/tables).
 
 I only keep track of the following values.
 
