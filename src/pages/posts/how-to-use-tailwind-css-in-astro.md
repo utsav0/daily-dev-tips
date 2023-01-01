@@ -11,7 +11,7 @@ tags:
 
 It's never been easier to include Tailwind CSS in a framework.
 
-Why? Astro has [build-in support for Tailwind](https://docs.astro.build/guides/styling#-tailwind)! 🥳
+Why? Astro has [build-in support for Tailwind](https://docs.astro.build/en/guides/styling/#css-integrations)! 🥳
 And yes, even the [Tailwind JIT compiler](https://daily-dev-tips.com/posts/why-tailwind-jit-compiler-is-amazing/).
 
 I'll write down this quick guide to get you started setting up Tailwind CSS in an Astro project.
