@@ -89,7 +89,7 @@ Next, create the HTML part of our header.
       <li>
         <a
           class="block mx-4 font-sans font-bold tracking-wider text-black no-underline uppercase "
-          href="{item.url}"
+          href={item.url}
           >{item.text}</a
         >
       </li>
