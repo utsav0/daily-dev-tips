@@ -54,7 +54,7 @@ NEXTAUTH_URL=http://localhost:3000
 - Database URL can be taken from your Heroku Postgres URL
 - Email server I'm using [mailtrap](https://mailtrap.io/) for this, as a testing server
 - Email from can be anything you like
-- NextAuth.jk URL needs to match the domain you are running this on
+- NextAuth.js URL needs to match the domain you are running this on
 
 ## Creating the schema
 
