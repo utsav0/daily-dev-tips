@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Post.astro
-title: '10 amazing games to learn CSS'
-metaTitle: '10 amazing games to learn CSS'
+title: '11 amazing games to learn CSS'
+metaTitle: '11 amazing games to learn CSS'
 metaDesc: 'Learn CSS in a fun way by solving CSS games'
 image: /images/07-03-2022.jpg
 date: 2022-03-07T03:00:00.000Z
@@ -125,6 +125,18 @@ However, you have to do it as quickly as possible, making this a great challenge
 The game has ten levels, but you can play more often and improve your speed.
 
 [Play CSS Speedrun](https://css-speedrun.netlify.app/)
+
+## 11. Flexica's Journey
+
+![Flexica's Journey](https://cdn.hashnode.com/res/hashnode/image/upload/v1728807444188/ff8ecf3d-5c8b-4111-8ca7-d07009ef3029.png)
+
+This is a 3D game where you move the character to the target island.
+
+You must arrange the ledges using Flexbox to create a path. But if you fall into the ocean, you'll need to restart the level.
+
+The game offers 25 levels that get more difficult as you progress.
+
+[Play Flexica Journey](https://flexicajourney.com)
 
 ## Bonus
 
